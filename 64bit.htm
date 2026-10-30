@@ -1,0 +1,102 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Tipy</title>
+<base target="_self">
+</head>
+
+<body bgcolor="#B7C8C4">
+
+<p><b><font face="Arial" size="4">vDosPlus</font></b><font face="Arial"><b>
+</b>-<b>
+</b>ke stažení zde ...
+<b>&nbsp;<a href="vDosPlus_mp_setup.exe"><img src="img/disketa.gif" border="0" width="16" height="16"></a></b></font></p>
+
+<p><b><font face="Arial" size="4">DOSBox</font></b><font face="Arial"><b>
+</b>-<b>
+</b>ke stažení zde ...
+<b>&nbsp;<a href="dosbox_mp_setup.exe"><img src="img/disketa.gif" border="0" width="16" height="16"></a></b></font></p>
+<p><font face="Arial">Program Majetkové podíly je uzpůsoben pro provoz v 
+prostředí 64 bitových operačních systémů.
+	Vlastní program Majetkové podíly se instaluje obvyklým způsobem. </font></p>
+<p><u><b><font face="Arial">vDosPlus</font></b></u></p>
+<p><font face="Arial">Emulační prostředí, které vychází z DOSBoxu, ale je 
+doplněno o další funkce<span lang="en-us"> (dopln</span>ěn příkaz CMD, umožněno 
+přímé volání 32 bitových aplikací atd.). Výkon je obdobný jako u DOSBoxu. </font></p>
+<p><font face="Arial">Pro nastavení prostředí DOSu se používá soubor CONFIG.TXT 
+a AUTOEXEC.TXT. Lze použít i jinak pojmenované konfigurační soubory.<br>
+Vzorové nastavení pro spuštění majetkových podílů je uloženo v souborech CONFIG.MP 
+a AUTOEXEC.MP.<br>
+Pro spuštění programu je vytvořen soubor <b>MPvDos.BAT</b>, ve kterém je 
+nastaveno použití zmíněné konfigurace (cmd /c start vDosPlus\vDosPlus.exe /cfg 
+config.mp).<br>
+<br>
+V konfiguračním souboru lze nastavit soubor s fonty písem. Pokud si někdo chce 
+hrát s nastavením, na internetu je nepočítaně typů písem volně ke stažení 
+(soubory TTF).<br>
+Lze využít i písem instalovaných ve Windows ve složce
+<span lang="en-us">C:\WINDOWS\FONTS.
+</span>Jako nejvhodnější se mi jevil font CONSOLAB (tučný).<span lang="en-us">
+</span>Bez zadání fontu je implicitní font poněkud nitkovitý.<br>
+<br>
+Rozměr okna se nastavuje přepínačem LINS = 
+xxx a COLS = xxx. Je sice omezen rozměrem 60 x 160, ale prostředí PC FAND nesnese více jak 
+132 sloupců.<br>
+V konfiguračním souboru bude nutno upravit počet řádků tak, aby se okno vešlo na 
+obrazovku, protože je to závislé na použitém&nbsp; fontu písma a velikosti 
+monitoru.</font></p>
+<p><font face="Arial">Dále je dobré upozornit na tisk do LPT v prostředí 
+vDosPlus. Výstup je odchycen a převeden na vybranou tiskárnu. V programu 
+Majetkové podíly to není využito, tisk je prováděn buď přes Ambon nebo PrFile32.</font></p>
+<p><font face="Arial">Klávesnice je přebírána z Windows. Problémem je tečka na 
+numerické klávesnici. Při nastavení české klávesnice je touto klávesou generován 
+znak čárka.<br>
+Nelze pak pořizovat desetinná čísla, datum (údaje, kde je tečka oddělovačem). V 
+prostředí vDosPlus se mi nepodařilo změnit nastavení klávesnice na 
+<span lang="en-us">EN</span>.<br>
+Řešením je přepnutí klávesnice po spuštění kombinací levý Alt+Shift. Pokud 
+chcete provozovat klávesnici CS z Windows, je nutno změnit nastavení klávesnice 
+pro Fand programem FANDINST na 0 (původní klávesnice).</font></p>
+<p><font face="Arial">Při spuštění prostředí vDosPlus je aktuálním vybraným 
+diskem disk C:<br>
+Pokud instalujete např. na disk D, je třeba v souboru AUTOEXEC.MP v úvodu 
+přepnout na tento disk.&nbsp; </font></p>
+<p><u><b><font face="Arial">DOSBox</font></b></u></p>
+<p><font face="Arial">Byl odstraněn problém s voláním 32 bitových programů. Toto je řešeno pomocí 
+	programu WINPRC64, který volá v hostitelském prostředí tyto aplikace.<br>
+	Pomocí tohoto programu je také vyřešeno zabránění náhodnému ukončení běžící 
+	aplikace zavřením okna křížkem v pravém horním rohu. <br>
+Při spuštění v DOSBoxu 
+	prostřednictvím WINPRC64 je ukončení okna blokováno. Násilné ukončení lze 
+	provést pouze přes správce úloh.<br>
+	Dále byla odstraněna nectnost DOSBoxu, kdy po spuštění byla vypnuta numerická 
+	klávesnice. Programem NUMLOCK.EXE lze klávesnici zapnout. <br>
+<br>
+	Rozšíření pro 64 bitové prostředí je distribuováno samostatným instalačním 
+	souborem DOSBOX_MP_SETUP.EXE, který je ke stažení v úvodu této stránky. <br>
+V průběhu instalace je nutno zvolit 
+	cestu k adresáři, kde je instalován program Majetkové podíly. <br>
+	Program musí být instalován do stejné složky. <br>
+	Do této složky se nainstaluje spouštěcí dávkový soubor <b>MP64.BAT</b>, 
+	který bude sloužit ke spouštění programu prostřednictvím DOSBoxu.&nbsp; <br>
+	Dále je v&nbsp;ní vytvořen podadresář DOSBox, ve kterém jsou podpůrné programy a 
+	konfigurační soubor pro DOSBox s&nbsp;názvem <b>MP.conf</b>. <br>
+	<br>
+	Výchozí nastavení cest pro instalaci je C:\MP. Pokud budete instalovat do 
+	jiného adresáře, je po dokončení instalace potřeba upravit cestu v oddílu<b> 
+	[Autoexec] </b> <br>
+v&nbsp;souboru MP.conf, kde je uvedeno přepnutí do aktuálního 
+	pracovního adresáře C:\MP. <br>
+Dále je nutno upravit spouštěcí dávku MP64.BAT, 
+	kde je nutno zadávat absolutní cestu k&nbsp;souboru WINPRC64.EXE, DOSBOX.EXE a 
+	MP.CONF. <br>
+	Při případné reinstalaci nezapomeňte odznačit instalaci MP.CONF a MP64.BAT, 
+	protože byste si přepsali vámi upravené soubory.</font></p>
+
+</body>
+
+</html>

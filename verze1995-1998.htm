@@ -1,0 +1,987 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+</head>
+
+<body bgcolor="#B7C8C4">
+
+<p><b><font face="Arial" size="4">Popis změn</font></b><font face="Arial">&nbsp;&nbsp;
+<u><a href="verze.htm">2014-2026</a></u><b><font size="5">&nbsp;&nbsp; </font></b>
+<a href="verze2008-2013.htm"><u>2008-2013</u></a><b><font size="5">&nbsp;&nbsp; </font></b>
+<u><a href="verze1999-2007.htm">1999-2007</a></u>&nbsp;&nbsp;
+<u><b>1995-1998</b></u></font></p>
+<p><font face="Arial"><span style="mso-fareast-font-family: MS Mincho"><b>Verze </b></span><b> 2.10</b> - distribuce 16.08.1999</font></p>
+<ul>
+  <li><font face="Arial">Proveden překlad programu pod verzí PC-FANDu 4.1. Tato verze
+    používá upravený  formát indexových souborů.  Při prvním pokusu o práci s
+    indexovým souborem dojde k  automatickému převodu na novou  strukturu.  Doporučuji  po  přeinstalaci spustit nabídku
+    "Servis - Rekonstrukce".<br>
+     Nová verze  umožňuje pořizovat datum  tak, že při  zkráceném zadání letopočtu (99) program doplní století následovně:<br>
+    <br>
+  a) letopočet od 00 do 49 -> doplní se 2000<br>
+  b) letopočet od 50 do 99 -> doplní se 1900<br>
+    <br>
+     Posun doplňování implicitního století lze nastavit programem FANDINST.EXE v nastavení konstant.<br>
+    </font></li>
+  <li><font face="Arial">Nové  sestavy "Vyúčtování  srážkových daní"  a "Podklad  pro
+    vyúčtování srážkových daní" v nabídce "Výstupy - Přehled daní".<br>
+    </font></li>
+  <li><font face="Arial">Do deníku podle DP upraveno naplnění DP 25, 26 a 34.<br>
+    </font></li>
+  <li><font face="Arial">Opraven číselník druhů pohybu:<br>
+  DP 26 -  čerpání úhrady vkladu z MP0M002  o hodnotu odpuštěného vypořádacího podílu.<br>
+    </font></li>
+  <li><font face="Arial">Do nabídky "Příkazy k úhradě" doplněno vytváření souboru pro
+    program  Ruční PKH  dodávaný Českou  poštou pro  předání dat na magnetických  médiích.  Touto   nabídkou  je  vytvářen  textový
+    soubor, který lze importovat do výše uvedeného programu.<br>
+     Dále  lze v  této  nabídce  vytvářet soubor  PRIKAZY.DBF pro další zpracování v programu Finance.<br>
+    </font></li>
+  <li><font face="Arial">Opraveno  zarovnávání   číselných  údajů  při   tisku  podle
+    formulářů při nastavené podmínce zarovnávání do sloupců.<br>
+    </font></li>
+  <li><font face="Arial">Do  formulářů ve  volitelných sestavách  doplněn údaj @VPODN
+    - vypořádací  podíl nezaúčtovaný.  Tento údaj  lze využít např. pro dopis  stávajícím členům s  oznámením jejich podílu  na ČOJ
+    v případě,  že  by  bylo  ukončeno  členství.  Údaj  @VPODN  je přebírán  z  popisných  údajů
+    podílového  listu  (vstupy  - F4 - oprava  popisných údajů  osoby), kam  se dostává  při výpočtu
+    vypořádacího  podílu  nabídkou  (vstupy  - výpočet vypořádacího podílu).<br>
+    </font></li>
+  <li><font face="Arial">Do  nabídky   "Servis  -  Speciální   akce"  doplněn  export
+    matričních souborů do DBF souborů.</font></li>
+</ul>
+<hr>
+<p><font face="Arial"><span style="mso-fareast-font-family: MS Mincho"><b>Verze </b></span><b>2.09</b> -
+</font><font face="Arial">distribuce 01.11.1998</font></p>
+<ul>
+  <li><font face="Arial">Opraven  tisk  přes  formuláře,  kdy  se  nezarovnával  údaj
+    @PRIJMTI.<br>
+    </font></li>
+  <li><font face="Arial">Opraveno   pořízení   nového   dokladu   s   kopií  klávesou
+    &lt;ShiftF5>, kdy  se přebíraly do  nového dokladu i  údaje Období a Likvidace dokladu. Nyní se do období dosazuje aktuální období
+    a v údaji likvidace dokladu se ruší příznak zaúčtování.<br>
+    </font></li>
+  <li><font face="Arial">Doplněn účtový předpis u druhu pohybu 69&nbsp;<br>
+    </font>
+    <table border="1" width="364">
+      <tr>
+        <td width="30" bgcolor="#808080"><font face="Arial">DP</font></td>
+        <td width="37" bgcolor="#808080"><font face="Arial">Upol</font></td>
+        <td width="121" bgcolor="#808080"><font face="Arial">Popis</font></td>
+        <td width="51" bgcolor="#808080"><font face="Arial">Autom</font></td>
+        <td width="27" bgcolor="#808080"><font face="Arial">MD</font></td>
+        <td width="58" bgcolor="#808080"><font face="Arial">Dal</font></td>
+      </tr>
+      <tr>
+        <td width="30"><font face="Arial">69</font></td>
+        <td width="37"><font face="Arial">23</font></td>
+        <td width="121"><font face="Arial">Oceňovací rozdíl</font></td>
+        <td width="51"><font face="Arial">A</font></td>
+        <td width="27"><font face="Arial">AP</font></td>
+        <td width="58"><font face="Arial">648620</font></td>
+      </tr>
+    </table>
+    <p>&nbsp;</li>
+  <li><font face="Arial">Opravena sestava "Deník podle  druhu pohybu". U druhu pohybu
+    01 se vypisovala do údaje  úhrada vkladu hodnota inventáře a do údaje úhrada  závazku hodnota znehodnocení. Pro  druh pohybu 02
+    se nevypisovaly hodnoty.<br>
+    </font></li>
+  <li><font face="Arial">Vytvořeny nové sestavy:<br>
+<br>
+  a) Účetní deník<br>
+     Sestava  obsahuje  opis  všech  změnových dokladů pořízených v rozsahu zvolených období, ke  kterým existuje účtový předpis.<br>
+  Ke  každému dokladu  je vypsáno  zaúčtování. Protože zaúčtování dokladu může obsahovat několik  účetních zápisů, je při výskytu<br>
+  několika zápisů  na jeden řídící účet  v rámci dokladu proveden mezisoučet. Sestava je setříděna podle abecedy.<br>
+<br>
+  b) Obratová soupiska<br>
+     Sestava  je tříděna  podle čísla  účtu a  je v  ní srovnáván počáteční stav  podílových listů s  konečným stavem a  do změny
+    stavu  je  vyčíslen  pohyb  na  účtech  podle  číselníku účtový předpis.  Jednotlivé   obraty  na  účtech   jsou  rozepsány  ze
+    zaúčtování  všech  změnových  dokladů  a  jsou  setříděny podle rodného  čísla.  Touto  sestavou  lze  získat  přehled  o všech
+    dokladech, které způsobily změny na jednotlivých účtech.<br>
+<br>
+  c) Srovnávací inventurní soupis<br>
+     Tato  sestava je  obdobou sestavy  "Inventurní soupisy".  Je tříděna  podle účtů  a ke  každému účtu  je vypsán  seznam osob<br>
+  z jejichž podílových listů je stav tvořen. Při  zpracování  sestavy  jsou  navíc  zjišťovány stavy účtů
+    evidovaných  na  podílových  listech   k  počátku  i  ke  konci zvoleného období a jsou vysčítány změny z dokladů vztahující se
+    k těmto  účtům.   V  údaji  rozdíl  je   porovnán rozdíl  mezi počátečním a  konečným stavem účtu  a souhrnem změn  na účtu za
+    zvolené období.<br>
+     Tato  sestava  je  určena  zejména  pro  vyhledání  osob, na kterých  dochází  k  porušení  vazby  počáteční  stav + změny =
+    konečný stav.</font></li>
+</ul>
+<hr>
+<p><font face="Arial"><span style="mso-fareast-font-family: MS Mincho"><b>Verze </b></span><b>2.08</b> -
+</font><font face="Arial">distribuce 06.10.1998<br>
+</font></p>
+<ul>
+  <li><font face="Arial">Doplněn import souboru KT5M001 z programu "Vklady a závazky"
+    verze 1.01.<br>
+    </font></li>
+  <li><font face="Arial">Doplněna nabídka "Změna poštovních směrovacích čísel a názvů
+    pošt v  adresách". Nabídka slouží  k hromadné změně poštovních směrovacích čísel ve všech  adresách v podílových listech. Akce
+    je určena zejména pro případy, kdy v důsledku reorganizace jsou pošty zrušeny a celé obce jsou přiděleny pod správu jiné pošty.<br>
+     Změny  jsou  prováděny   do  aktuálního  matričního  souboru (MP0M001).  Akci lze  použít i  pro změnu  názvu pošty. V tomto
+    případě bude vyplněno  staré i nové PSČ shodné  a do adres bude dosazen nový název pošty.<br>
+    </font></li>
+  <li><font face="Arial">Do  nabídky  "Výstupy  -  podílové  listy"  doplněna sestava
+    Přehled vypořádacích podílů.<br>
+    </font></li>
+  <li><font face="Arial">Do  servisní akce  "Změna rodných  čísel" doplněny  kontroly
+    pořízení:<br>
+  a) původní rodné číslo se musí vyskytovat v podílových listech<br>
+  b) nové rodné číslo nesmí být v podílových listech použito<br>
+  c) původní i  nové rodné číslo může být  v souboru změn rodných čísel uvedeno pouze jednou<br>
+    </font></li>
+  <li><font face="Arial">Opravena   sestava   "Přehled   o   pohybech   na   vkladech
+    a závazcích".  Jednotlivé pohyby  se přičítaly  k následujícímu řádku,  protože   se  nenulovaly  proměnné   pro  nápočet  změn
+    z každého dokladu.<br>
+    </font></li>
+  <li><font face="Arial">Upravena jmenná konvence souborů pro rok 2000.<br>
+    </font></li>
+  <li><font face="Arial">Upravena nabídka &lt;F2>-filtr při tisku sestav s výběrem osob.
+    Po stisku klávesy &lt;F2> je zapnuto/vypnuto filtrování označených záznamů  pro  zlepšení  přehlednosti.  Původní  využití klávesy
+    &lt;F2>  pro hromadné  označení záznamů,  ve kterých  se vyskytuje zadaný řetězec znaků bylo změněno na klávesu &lt;Shift F2>.<br>
+    </font></li>
+  <li><font face="Arial">Do  nabídky pořízení  dokladů doplněna  klávesa &lt;Shift  F5>.<br>
+  Slouží k  pořízení nového dokladu s  převzetím údajů z dokladu, na kterém  je nastaven kurzor.  Při tomto způsobu  pořízení již
+    není nutno  vybírat druh pohybu ze  seznamu, protože je převzat z originálního dokladu.<br>
+    </font></li>
+  <li><font face="Arial">Barevně   odlišeno  zobrazení   sumárního  podílového  listu
+    (modrý) od prohlížení jednotlivých podílových listů (šedivé).<br>
+    </font></li>
+  <li><font face="Arial">Nová nabídka "Splátkový kalendář" slouží pro zachycení všech
+    budoucích plateb podniku z titulu snižování závazku vůči osobám zachyceným  v evidenci.  Lze do  něj zaznamenat  všechny výdeje
+    majetku s udáním termínu platby. Záznam ve splátkovém kalendáři obsahuje:<br>
+<br>
+    <b>
+  Rodné číslo</b> - identifikace osoby, které bude majetek vydáván Kód  nabytí a  pořadové číslo  podílového listu,  na který bude
+    vytvářen automatický doklad při  využití akce vytváření dokladů ze splátkového kalendáře<br>
+    <b>
+  Datum splátky</b><br>
+    <b>
+  Druh  pohybu</b>  -  pro  určení  druhu  výdeje.  Bude  použit  pro vytvoření automatického dokladu. Lze  použít pouze druhy pohybu
+    s typem  pohybu  1  (výdej  závazku)  a  2  (výdej vypořádacího podílu).<br>
+    <b>
+  Popis změny</b> - libovolný popisný údaj&nbsp;<br>
+    <b>Procento závazku</b> - pro ulehčení zjištění výše splátky lze zadat
+    procento, o které se bude  snižovat závazek. Při pořízení údaje Kč,   lze   vložením   prázdného   údaje   (klávesou  mezerník)
+    a potvrzením  (klávesou Enter)  nechat  vypočítat procentickou částku ze  závazku nebo z  vypořádacího podílu v  závislosti na
+    použitém druhu pohybu.<br>
+    <b>
+  Splátka</b><br>
+    <b>
+  Zpracováno  (A/N)</b>  -   indikace  vytvoření  výdejového  dokladu klávesou &lt;F10>.<br>
+<br>
+     Klávesou  &lt;F2>  lze  zapnout  filtr  zobrazení pouze záznamů splatných  v  aktuálním  období.  Tato  klávesa  současně filtr
+    vypíná.<br>
+<br>
+     Klávesou  &lt;F10> se  spustí vytváření  výdejových dokladů  ze záznamů  splátkového  kalendáře  splatných  ve zvoleném účetním
+    období. Jsou  zpracovávány pouze záznamy,  které doposud nemají nastaveno  označení,  že  již  byly  zpracovány.  Při vytváření
+    dokladů  program   pracuje  s  číselníkem   MP18PUZD  -  Pořadí uplatnění zdrojů.<br>
+     Před spuštěním akce je  vhodné zkontrolovat nastavení tohoto číselníku,  protože   v  závislosti  na   čerpání  zdrojů  jsou
+    vypočteny daně do dokladu.<br>
+     Vytvořené  výdejové   doklady  lze  libovolně   v  nabídkách pořízení nebo prohlížení dokladů rušit nebo opravovat.<br>
+<br>
+  Tipy:<br>
+<br>
+     Klávesou    &lt;Shift   F5>    lze   pořizovat    nový   doklad s přednaplněním údajů z dokladu, na kterém byl nastaven kurzor.<br>
+  př.<br>
+  Pro  osobu  jsou  domluveny  splátky  závazku  finančně.  Stačí pořídit  první  splátku  klávesou  F5,  další splátky pořizovat
+    pomocí Shift F5 a měnit pouze termín splatnosti.<br>
+<br>
+     Klávesou  &lt;F7> lze  vyvolat pohled  do nadřízených  souborů, klávesou &lt;AltF7> do všech databází.<br>
+  př.<br>
+  V průběhu pořízení  potřebuji zjistit aktuální  stav podílového listu, nebo  zjistit stav na sumární  kartě. Stiskem klávesy F7
+    se  zobrazí pohled  do nadřízených  souborů. Mohu  vybrat např. PodílovéListy, kurzor se nastaví  na právě zpracovávanou osobu,
+    klávesou &lt;Tab> lze zobrazit podílový list.<br>
+    </font></li>
+  <li><font face="Arial">Z  nabídky  "Pořízení"  lze  ze  seznamu  osob,  ze  seznamu
+    podílových  listů  a  ze   seznamu  dokladů  spustit  splátkový kalendář klávesou &lt;Ctrl F6>.<br>
+    </font></li>
+  <li><font face="Arial">Doplněna   sestava  "Nerealizované   platby  ze  splátkového
+    kalendáře".<br>
+    </font></li>
+  <li><font face="Arial">Doplněna  sestava "Úplná  hlavní kniha".  Slouží ke kontrole
+    zaúčtování změnových dokladů v návaznosti na změny v podílových listech. V sestavě je srovnáván počáteční stav podílových listů
+    s konečným stavem a do změny  stavu je vyčíslen pohyb na účtech podle číselníku účtový předpis.&nbsp;<br>
+    Sestavu lze vytvářen i za  delší časové období, protože před spuštěním  akce lze  omezit období  od ..  do. Toho  lze využít
+    např. pro  vyčíslení obratů na  účtech za celý  rok. Ke každému účtu  vkladů a  závazků  zachycenému  na podílových  listech je
+    vyčíslen  rozdíl mezi  počátečním stavem  + proúčtovanou změnou stavů - konečným stavem. Pokud je rozdíl nenulový, příčina může
+    být  v použití  neúčetního druhu  pohybu, nebo  byly po měsíční uzávěrce prováděny  změny do uzavřeného  období, nebo je  chyba
+    v účtovém předpisu u některého druhu pohybu.<br>
+  Upozornění:<br>
+  Při použití intervalu např. 01-98 až 12-98 musí být k dispozici matriční  soubory počátečních  stavů měsíce  01-98 tj.  konečný
+    stav 12-97 a matriční soubory aktuálních stavů z období 12-98.<br>
+    </font></li>
+  <li><font face="Arial">Opraveno účtování  druhu pohybu 42  a 45 v  číselníku účtový
+    předpis.<br>
+  Doplněny nové druhy pohybu:<br>
+  25 - odpuštění závazku<br>
+  26 - odpuštění závazku z vypořádacího podílu.<br>
+    </font></li>
+  <li><font face="Arial">Upraven číselník "Algoritmy zdanění". Byla doplněna definice
+    danění   od  1.1.1998,   ve  které   je  upraven   výpočet  DPH u vypořádacího podílu.<br>
+    </font></li>
+</ul>
+<hr>
+<p><font face="Arial"><span style="mso-fareast-font-family: MS Mincho"><b>Verze </b></span><b>2.07</b> -
+</font><font face="Arial">distribuce 17.08.1998<br>
+</font></p>
+<ul>
+  <li><font face="Arial">V celém programu upravena práce s datem rozšířením letopočtu
+    na 4  místa. Při pořízení datumu  program při nevyplnění měsíce nebo roku přebírá tyto údaje z aktuálního systémového data.<br>
+  př.<br>
+  systémové datum je 5.9.1998<br>
+<br>
+    </font>
+    <table border="1" width="388" height="164">
+      <tr>
+        <td width="117" height="16" bgcolor="#C0C0C0"><font face="Arial">
+  zadávaný datum</font></td>
+        <td width="82" height="16" bgcolor="#C0C0C0"><font face="Arial">   pořízení</font></td>
+        <td width="61" height="16" bgcolor="#C0C0C0"><font face="Arial">      výsledek</font></td>
+      </tr>
+      <tr>
+        <td width="117" height="16"><font face="Arial"></font><font face="Courier">
+  01.01.1998</font></td>
+        <td width="82" height="16"><font face="Courier">       1.1.</font></td>
+        <td width="61" height="16"><font face="Courier">          01.01.1998</font></td>
+      </tr>
+      <tr>
+        <td width="117" height="16"><font face="Courier">
+  01.01.1998</font></td>
+        <td width="82" height="16"><font face="Courier">       1.1.98</font></td>
+        <td width="61" height="16"><font face="Courier">        01.01.0098</font></td>
+      </tr>
+      <tr>
+        <td width="117" height="16"><font face="Courier">
+  01.01.1993</font></td>
+        <td width="82" height="16"><font face="Courier">       1.1.1993</font></td>
+        <td width="61" height="16"><font face="Courier">      01.01.1993</font></td>
+      </tr>
+      <tr>
+        <td width="117" height="16"><font face="Courier">
+  01.01.1993</font></td>
+        <td width="82" height="16"><font face="Courier">       1.1.93</font></td>
+        <td width="61" height="16"><font face="Courier">        01.01.0093</font></td>
+      </tr>
+      <tr>
+        <td width="117" height="16"><font face="Courier">
+  01.09.1998</font></td>
+        <td width="82" height="16"><font face="Courier">       1</font></td>
+        <td width="61" height="16"><font face="Courier">             01.09.1998</font></td>
+      </tr>
+    </table>
+    <p><font face="Arial">
+<br>
+     V  souvislosti  s  rozšířením  letopočtu  na  4  místa došlo k úpravě formulářů pro  pořízení (FRM\MP0FP???.FRM). Pokud máte
+    v těchto formulářích provedené vlastní úpravy, před reinstalací tyto formuláře  uschovejte a rozšiřte masku  pro datum pořízení
+    na 10 podtržítek (__________).<br>
+    </font></li>
+  <li><font face="Arial">V nabídce přepínače -  konfigurace programu doplněn přepínač
+    pro zobrazení  zůstatků hodnot v seznamech  osob. Pomocí tohoto nastavení  lze v  pořízení  v
+    seznamech osob  zobrazovat různé hodnoty v údaji zůstatek:<br>
+<br>
+  1) zůstatek závazku (pronajímaného majetku)<br>
+  2) zůstatek závazku + zůstatek vypořádacího podílu<br>
+  3) zůstatek  závazku + zůstatek vypořádacího  podílu + splacený vklad<br>
+  4) zůstatek vypořádacího podílu<br>
+  5) splacený vklad<br>
+  6) nesplacený vklad<br>
+<br>
+     Při změně  tohoto přepínače se  jednotlivé způsoby zobrazení přepínají klávesami  &lt;šipka nahoru> a  &lt;šipka dolů>. Při  práci
+    v nabídce  "vstupy  -  pořízení"  je  zvolený  způsob zobrazení vypisován v horní části obrazovky.<br>
+    </font></li>
+  <li><font face="Arial">Do nabídky "vstupy - pořízení" doplněno vyvolání nabídky pro
+    změnu přepínačů klávesou &lt;Alt F9>.<br>
+    </font></li>
+  <li><font face="Arial">V  nabídce  nastavení  období   lze  měnit  aktuální  období
+    klávesami  &lt;šipka  nahoru>  a  &lt;šipka  dolů>.  Program zvyšuje, případně snižuje zvolené období o měsíc.<br>
+    </font></li>
+  <li><font face="Arial">Upraveno  naplnění daňové  tabulky klávesou  &lt;F5> při výdeji
+    vypořádacího podílu.  Pokud byla nabývací  hodnota vkladu vyšší než vklad, do daňové tabulky se doplňovala částka pouze do výše
+    vkladu. Z toho důvodu byla  částka nad původní vklad zatěžována srážkovou daní.<br>
+    </font></li>
+  <li><font face="Arial">Upraveno  vytváření  souboru  zaúčtování.  Pokud  je  shodný
+    řídící i souvztažný účet, zápis není proveden. K těmto případům
+    dochází  například při  změně skupiny  osob, kdy  stará i  nová skupina má svůj vklad nebo závazek evidován na stejném účtu.<br>
+    </font></li>
+  <li><font face="Arial">Do nabídky "servis -  speciální akce" doplněna kontrola dat.
+    Nabídkou  je vytvářena  sestava,  ve  které jsou  vypsány chyby v dokladech, nebo na podílových listech.<br>
+    </font></li>
+  <li><font face="Arial">Do   nabídky  "karty   pohybů"  doplněna   sestava  "Přehled
+    o pohybech na vkladech a závazcích". Do sestavy jsou zpracovány doklady, které  vyhovují vstupnímu filtru.  Je prováděn nápočet
+    do  sloupců  "ZÁVAZEK,  VYPOŘÁDACÍ  PODÍL  a  VKLAD".  Pokud se zvyšuje hodnota těchto údajů,  je vypsána kladná hodnota, pokud
+    se snižuje, je vypisována záporná  hodnota. Za každou osobou je uveden součet celkového  zvýšení/snížení (+/-) majetkové účasti
+    v podniku a vypsán aktuální zůstatek těchto hodnot z podílového listu.<br>
+    </font></li>
+  <li><font face="Arial">Doplněn  přepínač  "Automaticky  zvyšovat  č.dokladu  o  1".
+    V zapnutém  stavu je  při pořízení  dokladu nabídnuto  poslední použité číslo dokladu zvýšené o jedničku.<br>
+    </font></li>
+  <li><font face="Arial">Rozšířeno  nastavení parametrů  výpočtu vypořádacího  podílu
+    o části vkladu, ze kterých má  být počítán koeficient podílu na ČOJ  k rozdělení.  Toto rozšíření  se vztahuje  na typ  výpočtu
+    1 a  3. Doposud  byl koeficient  zjišťován z  celého splaceného vkladu (zákl. vklad + nedělitelný  fond + rezervní fond + další
+  vklad  -  nesplacený  vklad).  U podniků,  které  mají  různou povinnost  pro  naplnění   základního  vkladu,  dalšího  vkladu
+    a fondů tento přepínač umožňuje  různé kombinace stanovení výše koeficientu.<br>
+<br>
+  př.<br>
+     Podnik  má pro  nově přijímané  členy stanovenu příplatkovou povinnost  (ážio),  která  zohledňuje  navýšení vlastního jmění
+    v průběhu  hospodaření.  Pro   zakládající  členy  činil  vklad 30000,-  Kč.  Pro  nově  přistoupivší  členy  v  roce  1998  je
+    stavovena příplatková  povinnost 8356,- Kč. Toto  ážio může být zachyceno na  podílovém listu např. v  údaji rezervní fond nebo
+    další vklad.  Při výpočtu vypořádacího  podílu pak již  logicky
+  nebudou  zohledňovány ukončené  roky členství  (délka členství) a pro stanovení koeficientu podílu na ČOJ nebude ážio použito.<br>
+    </font></li>
+  <li><font face="Arial">Doplněno  nastavení  zaokrouhlení  vypořádacího  podílu. Lze¨nastavit  zaokrouhlení  vypořádacího  podílu  od  tisíců  Kč po
+    haléře.<br>
+<br>
+  př:  VP  =  26847.59 Kč<br>
+<br>
+    </font>
+    <table border="1" width="282">
+      <tr>
+        <td width="146" colspan="2">Nastavení</td>
+        <td width="114" align="right">Zaokrouhlení</td>
+      </tr>
+      <tr>
+        <td width="34"><font face="Arial">
+  -3</font></td>
+        <td width="112"><font face="Arial">   tisíce</font></td>
+        <td width="114" align="right"><font face="Arial">        27000,-</font></td>
+      </tr>
+      <tr>
+        <td width="34"><font face="Arial">
+  -2</font></td>
+        <td width="112"><font face="Arial">   stovky</font></td>
+        <td width="114" align="right"><font face="Arial">        26800,-</font></td>
+      </tr>
+      <tr>
+        <td width="34"><font face="Arial">
+  -1</font></td>
+        <td width="112"><font face="Arial">   desítky</font></td>
+        <td width="114" align="right"><font face="Arial">       26850,-</font></td>
+      </tr>
+      <tr>
+        <td width="34"><font face="Arial">
+   0</font></td>
+        <td width="112"><font face="Arial">   jednotky</font></td>
+        <td width="114" align="right"><font face="Arial">      26848,-</font></td>
+      </tr>
+      <tr>
+        <td width="34"><font face="Arial">
+   1</font></td>
+        <td width="112"><font face="Arial">   desetiny</font></td>
+        <td width="114" align="right"><font face="Arial">      26847,60</font></td>
+      </tr>
+      <tr>
+        <td width="34"><font face="Arial">
+   2</font></td>
+        <td width="112"><font face="Arial">   setiny</font></td>
+        <td width="114" align="right"><font face="Arial">        26847,59</font></td>
+      </tr>
+    </table>
+    <p>&nbsp;</li>
+  <li><font face="Arial">Při  vytváření spojovacího  souboru ve  tvaru "delimited" se
+    při účtování  na výsledkové účty  nedoplňovaly kalkulační údaje
+    závod, středisko, výkon z nastavení programu v případě, že tyto údaje nebyly vyplněny v dokladu - opraveno.</font></li>
+</ul>
+<hr>
+<p><font face="Arial"><span style="mso-fareast-font-family: MS Mincho"><b>Verze </b></span><b>2.06</b> -
+</font><font face="Arial">distribuce 14.07.1998<br>
+</font></p>
+<ul>
+  <li><font face="Arial">&nbsp;Při použití typu pohybu 5 (ukončení členství) se při editaci
+    položek  pro snížení  vkladu přepočítává  rozdíl mezi  sníženým
+    vkladem a vypořádacím podílem po každé změně položky.&nbsp;<br>
+    </font></li>
+  <li><font face="Arial">Při výběru dat pro  sestavy přehled daní program havaroval,
+    pokud byly  zjištěny rozdíly mezi částkami  uloženými v dokladu a přepočítanými  částkami podle  aktuálního číselníku algoritmy
+    zdanění - opraveno.<br>
+    </font></li>
+  <li><font face="Arial">Opravena   servisní  akce   změna  rodných   čísel.  Program
+    havaroval s hlášením "Soubor není setříděn".<br>
+    </font></li>
+  <li><font face="Arial">Do editace sumárního podílového listu doplněny hektary půdy
+    celkem. Upravena  aktualizace pomocí změnových  dokladů tak, že při  použití  DP  do  49   jsou  hektary  do  podílových  listů
+    přičítány,  při použití  DP od  50 jsou  odečítány. V  sumárním podílovém listu nelze hektary editovat. K případné přímé úpravě
+    slouží editace  libovolných podílových listů, z  nichž se změny automaticky promítají  do sumárního listu.  Údaj je doplněn  do
+    tisku podílových listů.<br>
+    </font></li>
+  <li><font face="Arial">Opraven   tisk  jmenovky   přes  volitelné   sestavy  pomocí
+    formuláře o titul.<br>
+    </font></li>
+  <li><font face="Arial">Při  vypnutém  přepínači  "Editace  počátečního  stavu"  šlo
+    upravovat částky v podílových listech. Opraveno.<br>
+    </font></li>
+  <li><font face="Arial">Při  opakované  měsíční  uzávěrce  program  vydával  hlášení
+    "nekonzistentní  indexové  soubory".  Při  uzávěrce  se nyní do nového období kopírují i indexové soubory.<br>
+    </font></li>
+  <li><font face="Arial">Upraveno  omezení programu  ve vztahu  k přidělené  licenci.
+    Pokud prošla platnost licence, není funkční nabídka pořízení.<br>
+    </font></li>
+  <li><font face="Arial">Do nabídky Výstupy - podílové listy doplněny sestavy:<br>
+  a) Členské vklady<br>
+  b) Závazky<br>
+  c) Půda a nájemné</font></li>
+</ul>
+<hr>
+<p><font face="Arial"><span style="mso-fareast-font-family: MS Mincho"><b>Verze </b></span><b>2.05</b> -
+</font><font face="Arial">distribuce 17.11.1997<br>
+</font></p>
+<ul>
+  <li><font face="Arial">&nbsp;Při  tisku  sestav  klávesou  F6  program  podle první řádky
+    sestavy zjišťuje šířku sestavy.  V závislosti na zjištěné šířce nastaví  tiskárnu s  optimální velikostí  písma. Přednostně  je
+    uvažováno o tisku na papír šířky 24 cm (tj. cca do 160 znaků na řádek  při  nejhustším  tisku).  Pokud  je  sestava širší, před
+    započetím tisku je vypsáno  upozornění, že sestavu lze tisknout pouze  na  široký  papír  a  nastavení  velikosti písma se tomu
+    uzpůsobí.<br>
+  Doplněn  přepínač,   který  tuto  funkci   umožní  využívat  či ignorovat.<br>
+    </font></li>
+  <li><font face="Arial">Do sestav deník a historie  pohybů doplněn filtr pro omezení
+    druhu pohybu od - do.<br>
+    </font></li>
+  <li><font face="Arial">Při  použití druhu  pohybu 22  pro ukončení  členství se při
+    změně  vypořádacího podílu  nepřepočítával rozdíl  mezi vkladem a vypořádacím podílem již v dokladu, ale až po opuštění dokladu
+    při  ukládání.  Upraveno  tak,  že  se  rozdíl  přepočítává již v průběhu pořízení.<br>
+    </font></li>
+  <li><font face="Arial">Při pořízení nového dokladu se ukládá poslední použité číslo
+    dokladu. V  dalším pořízení je nabízeno  číslo dokladu zvětšené o jedničku.<br>
+    </font></li>
+  <li><font face="Arial">Vytvořen nový  číselník "Pořadí uplatnění  zdrojů při výdeji
+    majetku", který je přístupný v nabídce "Číselníky - automatické výpočty".  Je využíván  při pořízení  výdejových dokladů (druhy
+    pohybu 51 až 69) při vyplňování daňové tabulky. Při  vytváření  výdejových  dokladů  a  výpočtu  daní  se  musí
+    uplatňovat zdroje (položky osvobozující od daní). Protože každá osoba  má  na  podílovém  listu  několik  druhů  zdrojů  (např.
+    "inventář",  "transformační podíl"  atd.), program  z nich  při automatických akcích  uplatňuje v tom pořadí,  jak je nastaveno
+    v tomto číselníku.  Při editaci daňové tabulky  si lze klávesou F5 nechat vyplnit daňovou tabulku podle výše uvedeného postupu.
+    Program postupně čte z číselníku názvy položek podílového listu od shora  dolů a zjišťuje,  zda podílový list  osoby má v  této
+  položce zůstatek  větší než je  vypořádací hodnota na  dokladu. Pokud není dostatečný, je do daňové tabulky doplněn pouze tento
+    zůstatek a je testována další položka z číselníku.<br>
+  Číselník lze  upravovat i přímo  během práce v  dokladu, kdy je dostupný přes  uživatelské pohledy klávesou  Alt F7 pod  názvem
+    <i>PořadíUplatněníZdrojů</i>.  Pokud  chcete  změnit  pořadí  vět  při
+    editaci číselníku,  lze změnu provést  klávesami CTRL &lt;-  (ctrl šipka doleva) nebo CTRL -> (ctrl šipka doprava).<br>
+  Dále  je  číselník  využíván  při  vytváření výdejových dokladů nabídkou
+    &lt;Automatické výdeje&gt;.<br>
+<br>
+<br>
+    <b>Automatické výdeje<br>
+    </b>&nbsp;Nabídka  slouží k  hromadnému vytváření  výdejových dokladů.
+    Lze ji využít v podnicích, kde např. chtějí jednorázově splácet část  závazků. Dále  je tato  akce použitelná  při automatickém
+    výpočtu dividend pro jejich následné vyplacení a pod.<br>
+  Výpočet  je  řízen  parametry  automatických  výdejů. Parametry určují  jakým  způsobem  bude   výpočet  probíhat.  Lze  omezit
+    interval  skupin osob  a kódů  nabytí podílových  listů pro něž bude výpočet prováděn.<br>
+  Podle  druhu  pohybu  je  zjišťováno,  zda  se  jedná o snížení
+  závazku nebo vypořádacího podílu (typ  pohybu 1 a 2). Jiné typy pohybu nelze  v nabídce použít.  Automatické výdeje lze  použít
+    nejen pro  vytvoření dokladů na  výplatu finančních prostředků, ale i na výdej v naturální  formě. Pokud se jedná o uskutečnění
+    zdanitelného plnění z hlediska zákona  o DPH, vyplňte sazbu. Ta se bude dosazovat do každého dokladu.<br>
+  Při  vytváření  výdejových   dokladů  jsou  vypočítávány  daně. Výpočet  daní je  řízen  číselníkem  Algoritmy zdanění,  kde je
+    klíčovým  údajem datum  výdeje. Do  dokladů je  doplňován datum z parametrů.  Při  vytváření  dokladů  a  výpočtu  daní se musí
+    uplatňovat zdroje (položky osvobozující od daní). Protože každá osoba  má  na  podílovém  listu  několik  druhů  zdrojů  (např.
+    "inventář",  "transformační   podíl"  atd.),  program   z  nich uplatňuje v  tom pořadí, jak  je nastaveno v  číselníku "Pořadí
+    uplatnění zdrojů".<br>
+  Vypočítaná částka  je naplněna do dokladu  druhem pohybu, který je zadán v parametru Druh pohybu pro automatický výdej.<br>
+<br>
+  př.<br>
+    </font>
+    <table border="1" width="671">
+      <tr>
+        <td width="518"><font face="Arial">
+  Interval skupin osob, pro které se budou
+  provádět výdeje&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+        <td width="137"><font face="Arial">&nbsp; od 01 do 99</font></td>
+      </tr>
+      <tr>
+        <td width="518"><font face="Arial">
+  Interval kódu nabytí podílových listů, na
+  kterých budou prováděny výdeje&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+        <td width="137"><font face="Arial">&nbsp; od 01 do 04</font></td>
+      </tr>
+      <tr>
+        <td width="518"><font face="Arial">
+  Procento snížení závazku&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+        <td width="137"><font face="Arial">&nbsp; 1.25</font></td>
+      </tr>
+      <tr>
+        <td width="518"><font face="Arial">
+  Druh pohybu pro automatický výdej&nbsp;</font></td>
+        <td width="137"><font face="Arial">&nbsp; 55</font></td>
+      </tr>
+      <tr>
+        <td width="518"><font face="Arial">
+  Datum výdeje&nbsp;</font></td>
+        <td width="137"><font face="Arial">&nbsp; 01.09.97</font></td>
+      </tr>
+      <tr>
+        <td width="518"><font face="Arial">
+  Sazba DPH&nbsp;</font></td>
+        <td width="137"><font face="Arial">&nbsp; 0</font></td>
+      </tr>
+      <tr>
+        <td width="518"><font face="Arial">
+  Pořadí uplatnění zdrojů při výdeji&nbsp;</font></td>
+      </tr>
+      <tr>
+        <td width="518"><font face="Arial">
+  Popis dokladu&nbsp;</font></td>
+        <td width="137"><font face="Arial">&nbsp; Výplata dividend</font></td>
+      </tr>
+    </table>
+    <p><font face="Arial">
+     Pracuje  se pouze  se závazky,  které jsou  větší než  nula. Podle druhu pohybu nastaveného  v parametrech program zjišťuje,
+    zda se jedná o snižování  závazku nebo vypořádacího podílu (typ pohybu).  Následně je  vypočítána procentická  částka, o kterou
+    bude  závazek  snižován.  Je  matematicky  zaokrouhlena na celé koruny.<br>
+     Do čísla dokladu je naplněno implicitní číslo dokladu, které se zadává v nastavení programu.
+    Vlastní výpočet  daně z příjmů a  DPH probíhá podle stejných algoritmů  jako při  běžném pořízení  dokladu. Takto  vytvořené
+    doklady  lze  libovolně  opravovat   nebo  rušit.  Výpočet  lze přerušit stiskem jakékoliv klávesy.<br>
+<br>
+<br>
+    <b>Výpočet úroku ze závazku</b><br>
+    Doplněna  nabídka Výpočet  úroku ze  závazku. Před spuštěním výpočtu je nutno zadat parametry výpočtu.<br>
+  př.</font></p>
+    <table border="1" width="739">
+      <tr>
+        <td width="609"><font face="Arial">
+  a) Interval skupin osob, pro něž je úrok počítán&nbsp;</font></td>
+        <td width="114"><font face="Arial">&nbsp; od 01 do 03</font></td>
+      </tr>
+      <tr>
+        <td width="609"><font face="Arial">
+  b) Interval kódu nabytí podílových listů, ze
+     kterých bude použit závazek pro výpočet úrok&nbsp;</font></td>
+        <td width="114"><font face="Arial">&nbsp; od 01 do 99</font></td>
+      </tr>
+      <tr>
+        <td width="609"><font face="Arial">
+  c) Počítat úrok z vypořádacích podílů? (Ano/Ne)&nbsp;</font></td>
+        <td width="114"><font face="Arial">&nbsp;          Ne</font></td>
+      </tr>
+      <tr>
+        <td width="609"><font face="Arial">
+  d) Procento úroku&nbsp;</font></td>
+        <td width="114"><font face="Arial">&nbsp;        0.00</font></td>
+      </tr>
+      <tr>
+        <td width="609"><font face="Arial">
+  e) Druh pohybu pro připsání úroku&nbsp;</font></td>
+        <td width="114"><font face="Arial">&nbsp;          33</font></td>
+      </tr>
+      <tr>
+        <td width="609"><font face="Arial">
+  f) Kód nabytí podílového listu, kam budou
+     doklady vytvořeny&nbsp;</font></td>
+        <td width="114"><font face="Arial">&nbsp;          07</font></td>
+      </tr>
+      <tr>
+        <td width="609"><font face="Arial">
+  g) Popis dokladu&nbsp;</font></td>
+        <td width="114"><font face="Arial">&nbsp; Úrok z majetku</font></td>
+      </tr>
+    </table>
+    <p><font face="Arial">
+     Program  prochází podílové  listy  pro  skupiny osob  a kódy nabytí  omezených  intervaly   a  nasčítává  aktuální  zůstatky
+    závazků. Z  celkového součtu vypočítá  úrok a vyhledá  podílový list s  kódem nabytí daným parametry.  Pokud neexistuje, založí
+    prázdný. K tomuto podílovému listu  je vytvořen doklad s druhem pohybu daným parametry.<br>
+     Takto  vytvořené doklady  lze v  nabídce pořízení  libovolně opravovat a  rušit. Hromadné zrušení  takto vytvořených dokladů
+    lze provést spuštěním nabídky Zrušení dokladů s úroky.<br>
+     V návaznosti na tuto akci upraveny číselníky účtový předpis, algoritmy zdanění a příznaky nápočtu pro daň z příjmu.<br>
+<br>
+    <b>Výpočet dividend</b><br>
+    Doplněna nabídka Výpočet dividend. Před spuštěním výpočtu je nutno zadat parametry výpočtu.  Parametry určují jakým způsobem
+    bude  výpočet  probíhat.  Lze  omezit  základnu,  ze které bude vypočítávána dividenda. Na podílovém listu je vklad rozdělen na
+    čtyři položky, které nemusí být u každého člena stejné:<br>
+<br>
+  a) základní vklad<br>
+  b) nedělitelný fond<br>
+  c) rezervní fond<br>
+  d) další vklad<br>
+    <br>
+  Obsluha může specifikovat, které z  těchto čtyř částí vkladu se zúčastní výpočtu.<br>
+<br>
+  Program umožňuje dva způsoby výpočtu dividend:<br>
+  1) Rozdělení  stanovené částky<br>
+  V úvodu výpočtu  jsou vysčítány všechny vklady,  ke kterým bude počítána dividenda a zjištěn podíl rozdělované částky na součtu
+    všech vkladů. Dividenda je vypočítána vynásobením vkladu tímto podílem.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    částka k rozdělení<br>
+  Dividenda=  vklad&nbsp;&nbsp;&nbsp; x&nbsp;&nbsp;&nbsp;&nbsp; &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    součet všech vkladů<br>
+<br>
+  2) Procento z vkladu<br>
+  Dividenda je vypočítána zjištěním procenta z vkladu<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    procento<br>
+  Dividenda=  vklad&nbsp;&nbsp;&nbsp; x&nbsp;&nbsp;&nbsp; &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    100<br>
+<br>
+    <font color="#FF0000">
+  Pokud je  vyplněna částka k rozdělení,  má tento způsob výpočtu přednost a nastavená procentická sazba je ignorována.<br>
+    </font>
+<br>
+     Tato akce podle zadaných parametrů vypočítá hrubou dividendu a   zaokrouhlí ji matematicky na celé  koruny. Z této částky je
+    vypočítána srážková daň podle  parametru procento srážkové daně při připsání  dividendy. Vypočtené částky se  vyplní do dokladu
+    s druhem  pohybu, který  je zadán  v parametru  druh pohybu pro<br>
+  dividendu.  Pro tuto  akci  je  v distribučním  číselníku druhy pohybů  připraven DP  32. Je  vyhledáván podílový  list s kódem
+    nabytí,  který je  nastaven  parametrem  kód nabytí,  kam budou dividendy uloženy.  Standardně je připraven kód  nabytí 08, pro
+    nějž  je  uvedeno  zdaňování   v  číselníku  algoritmy  zdanění a zaúčtování. Pokud  takový podílový list  ještě neexistuje, je
+    založen.<br>
+  Výpočet lze přerušit stiskem jakékoliv klávesy.<br>
+<br>
+     Program vypočítává  srážkovou daň již  při výpočtu dividend. Daň  je však  uložena do  dokladu pouze  orientačně. Odvod daně
+    finančnímu  úřadu se  provádí až  v momentě  výplaty dividendy, nejpozději však do 3 měsíců od vzniku nároku na dividendu.<br>
+     Při  výpočtu dividendy  druhem  pohybu  32 se  do podílového listu zaznamenává  hrubá dividenda před  zdaněním. Pokud nebyla
+    dividenda  do 3  měsíců  vyplacena,  předpis srážkové  daně lze vytvořit  spuštěním nabídky  Odvod srážkové  daně. Po  spuštění
+  této  nabídky  jsou  vyhledány  podílové  listy  s kódem nabytí zadaným  v
+    parametru  kód  nabytí,  kam budou  doklady uloženy. Z nich  je  převzat  zůstatek  závazku  a  z  něj je vypočítána
+    srážková  daň  podle  parametru   procento  srážkové  daně.  Je vytvořen doklad s druhem pohybu zadaným v parametru druh pohybu
+    pro odvod  srážkové daně. Tento doklad  aktualizuje v podílovém listu i položku ostatní zdroje.<br>
+     Při výplatě dividend, ze  kterých již byla odvedena srážková daň, je  na výdejovém dokladu  nutno zadávat do  daňové tabulky
+    čerpání ostatních  zdrojů, protože se již  srážková daň počítat
+    nebude.<br>
+<br>
+  Konkrétní nastavení by pak  mělo vypadat následovně:</font></p>
+    <table border="1" width="776">
+      <tr>
+        <td width="700">
+  Počítat dividendy ze základního vkladu  ? (Ano/Ne)&nbsp;</td>
+        <td width="60"><font face="Arial">&nbsp;   A</font></td>
+      </tr>
+      <tr>
+        <td width="700">
+  Počítat dividendy z nedělitelného fondu ? (Ano/Ne)&nbsp;</td>
+        <td width="60"><font face="Arial">&nbsp;   A</font></td>
+      </tr>
+      <tr>
+        <td width="700">
+  Počítat dividendy z rezervního fondu    ? (Ano/Ne)&nbsp;</td>
+        <td width="60"><font face="Arial">&nbsp;   A</font></td>
+      </tr>
+      <tr>
+        <td width="700">
+  Počítat dividendy z dalšího vkladu      ? (Ano/Ne)&nbsp;</td>
+        <td width="60"><font face="Arial">&nbsp;   A</font></td>
+      </tr>
+      <tr>
+        <td width="700">
+  Částka k rozdělení na dividendy&nbsp;</td>
+        <td width="60"><font face="Arial">____</font></td>
+      </tr>
+      <tr>
+        <td width="700">
+  Procento z vkladu na dividendy&nbsp;</td>
+        <td width="60"><font face="Arial">____</font></td>
+      </tr>
+      <tr>
+        <td width="700">
+  Procento srážkové daně při připsání dividendy&nbsp;</td>
+        <td width="60"><font face="Arial">&nbsp;  25</font></td>
+      </tr>
+      <tr>
+        <td width="700">
+  Druh pohybu pro připsání dividendy&nbsp;</td>
+        <td width="60"><font face="Arial">&nbsp;  32</font></td>
+      </tr>
+      <tr>
+        <td width="700">
+  Kód nabytí podílového listu, kam budou doklady vytvořeny&nbsp;</td>
+        <td width="60"><font face="Arial">&nbsp;  08</font></td>
+      </tr>
+    </table>
+    <p><font face="Arial">
+  Takto  vytvořené  doklady  lze  v  nabídce  pořízení  libovolně opravovat a  rušit. Hromadné zrušení  takto vytvořených dokladů
+    lze provést spuštěním nabídky Zrušení dokladů s úroky.<br>
+     V návaznosti na tuto akci upraveny číselníky účtový předpis, algoritmy zdanění a příznaky nápočtu pro daň z příjmu.<br>
+<br>
+    <b>Rozdělení zisků a ztrát do vkladů</b><br>
+    Výpočet slouží k navýšení  nebo snížení vkladu společníka na základě rozhodnutí  členské schůze. Je  řízen parametry výpočtu
+    zisků/ztrát.<br>
+  Tato akce podle zadaných parametrů vypočítá podíl společníka na zisku/ztrátě  a  zaokrouhlí  ji  matematicky  na  celé  koruny.
+    Vypočtené  částky se  vyplní do  dokladu s  druhem pohybu daným parametry. Je vyhledáván podílový list s kódem nabytí, který je
+    nastaven  parametrem  kód  nabytí,  kam  budou doklady uloženy.<br>
+  Pokud takový podílový list ještě neexistuje, je založen. Při rozdělování ztráty je  kontrolováno, zda další vklad, do
+    kterého bude připisována ztráta stačí na krytí ztráty. Pokud by se dostal do záporného stavu, je vypsáno upozornění.
+    Výpočet lze přerušit stiskem jakékoliv klávesy.<br>
+<br>
+     Parametry určují  jakým způsobem bude  výpočet probíhat. Lze omezit základnu,  ke které bude  zisk nebo ztráta  rozpouštěna.
+    Omezení části  vkladu, která bude napočítávána  do základny, je shodné s nastavením výpočtu dividend.
+    Vlastní  výpočet  probíhá   shodným  způsobem  jako  výpočet
+  dividend. Pokud je vyplněna částka k rozdělení, má tento způsob výpočtu přednost a nastavená procentická sazba je ignorována.<br>
+     Při rozdělení  ztráty nelze počítat srážkovou  daň. Pokud je při  rozdělování  ztráty  vyplněno  procento  srážkové daně, je
+    v úvodu výpočtu vynulováno.<br>
+     Při rozdělování  zisku připsáním do vkladu  se údaj procento srážkové daně vyplňuje podle toho, zda právní forma společnosti
+    je družstvo  nebo společnost s  ručením omezeným. Zákon  586/92 o dani z příjmů v § 36 uvádí,  že za podíl na zisku se považují
+    i částky použité ze zisku na  zvýšení vkladu s výjimkou zvýšení vkladu
+    společníka na základě zvýšení základního jmění z majetku převyšujícího  základní jmění  společnosti s  ručením omezeným.
+    Z toho vyplývá, že družstva musí odvádět srážkovou daň 25 % již při  připsání vkladu,  s.r.o. nikoliv.  Zdanění srážkovou  daní
+    můžete ovlivnit vyplněním parametru "Procento srážkové daně".<br>
+<br>
+     Vypočítaný  podíl  na  zisku/ztrátě  je  naplněn  do dokladu s druhem  pohybu, který  je zadán  v parametru  Druh pohybu pro
+    rozdělení   zisku/ztráty   do   vkladu.   Pro   tuto   akci  je<br>
+  v distribučním   číselníku  druhy   pohybů  připraven   DP  31. V parametrech  je  také  nutno  zadat  na  jaký  podílový  list
+    (s  jakým kódem  nabytí) má  být doklad  uložen. Standardně  je připraven  kód  nabytí  08,   pro  nějž  je  uvedeno  zdaňování
+    v číselníku algoritmy zdanění a zaúčtování.<br>
+<br>
+  Konkrétní nastavení by pak  mělo vypadat následovně:</font></p>
+    <table border="1" width="496">
+      <tr>
+        <td width="406"><font face="Arial">
+  Rozpočítávat zisk/ztrátu k základnímu vkladu   ? (Ano/Ne)&nbsp;</font></td>
+        <td width="74"><font face="Arial">&nbsp;    A</font></td>
+      </tr>
+      <tr>
+        <td width="406"><font face="Arial">
+  Rozpočítávat zisk/ztrátu k nedělitelnému fondu ? (Ano/Ne)&nbsp;</font></td>
+        <td width="74"><font face="Arial">&nbsp;    A</font></td>
+      </tr>
+      <tr>
+        <td width="406"><font face="Arial">
+  Rozpočítávat zisk/ztrátu k rezervnímu fondu    ? (Ano/Ne)&nbsp;</font></td>
+        <td width="74"><font face="Arial">&nbsp;    A</font></td>
+      </tr>
+      <tr>
+        <td width="406"><font face="Arial">
+  Rozpočítávat zisk/ztrátu k dalšímu vkladu      ? (Ano/Ne)&nbsp;</font></td>
+        <td width="74"><font face="Arial">&nbsp;    A</font></td>
+      </tr>
+      <tr>
+        <td width="406"><font face="Arial">
+  Částka zisku/ztráty k rozdělení do vkladů&nbsp;</font></td>
+        <td width="74"><font face="Arial">123456</font></td>
+      </tr>
+      <tr>
+        <td width="406"><font face="Arial">
+  Procento z vkladu ke zvýšení/snížení vkladu&nbsp;</font></td>
+        <td width="74"><font face="Arial">&nbsp; 0.00</font></td>
+      </tr>
+      <tr>
+        <td width="406"><font face="Arial">
+  Druh pohybu pro rozdělení zisku/ztráty do vkladu&nbsp;</font></td>
+        <td width="74"><font face="Arial">&nbsp;   31</font></td>
+      </tr>
+      <tr>
+        <td width="406"><font face="Arial">
+  Kód nabytí podílového listu, kam budou doklady vytvořeny&nbsp;</font></td>
+        <td width="74"><font face="Arial">&nbsp;   08</font></td>
+      </tr>
+      <tr>
+        <td width="406"><font face="Arial">
+  Procento srážkové daně při připsání vkladu&nbsp;</font></td>
+        <td width="74"><font face="Arial">&nbsp;   25</font></td>
+      </tr>
+    </table>
+    <p>&nbsp;</li>
+  <li><font face="Arial">Byla vytvořena nová sestava Přehled daní z příjmů a DPH.<br>
+  Před  vytvářením  sestav  jsou  ze  změnového  souboru  vybrány doklady  s typem  pohybu 1   a 2  (výdeje majetku)  při splnění
+    intervalu období, který je zadán hned po spuštění nabídky. Následuje  přepočítání daní  z příjmů  podle stejných  pravidel
+    jako při běžném pořízení dokladů po opuštění daňové tabulky. Je
+    to  z toho  důvodu, že  ve změnovém  dokladu nelze  mít uloženy všechny  základy daní  (osvobozené částky  a základy  pro roční
+    zúčtování jsou kumulovány). Pokud při výpočtu vyjde jiná částka než je  uložena v dokladu,  je vypsáno upozornění.  Rozdíl může
+    vzniknout použitím  odlišného číselníku algoritmy  zdanění, než tomu  bylo  při  pořízení  dokladu.  V
+    tom  případě  je  nutno zkontrolovat, zda srážkové daně  nebyly provedeny v době vydání
+    odlišně. Do sestavy jsou vždy zahrnuty přepočítané hodnoty.Daň  z přidané  hodnoty není  přepočítávána a  do sestavy  jsou
+    převzaty hodnoty z dokladu.<br>
+  Pokud jsou zpracovávány doklady,  které byly převedeny nabídkou Import  - Data  z verze  1.05, je  o tomto  vypsáno upozornění.<br>
+  V těchto  dokladech nejsou  uloženy základy  daní a  osvobozené částky a není tudíž s čím přepočítané hodnoty porovnávat.<br>
+    <font color="#FF0000"><br>
+    Ta období, ve kterých se vyskytují naimportované doklady, není vhodné do sestav zahrnovat
+    !</font><br>
+    <br>
+  V nabídce lze vytvářet následující sestavy:<br>
+<br>
+    <b><i>
+  Podklad pro daň z příjmů</i><br>
+    </b>
+  Sestava obsahuje  přehled všech příjmů osob  s rozpisem částek, které jsou  osvobozeny od daně  z příjmů, jsou  dílčím základem
+    daně  při  ročním  zúčtování,  nebo  jsou  základem pro zdanění zvláštní sazbou.<br>
+<br>
+    <i><b>
+  Zdanitelná plnění</b></i><br>
+  Sestava  obsahuje  přehled  zdanitelných  plnění  a  jsou do ní přebírány údaje z  pořízených dokladů s typem pohybu  1 a 2. Do
+    sestavy se vypisují pouze doklady, kde je vypočítána DPH.<br>
+<br>
+    <b><i>
+  Podklad pro roční zúčtování</i></b><br>
+  V případech, kdy  na podniku dochází  k výdeji majetku  a tento příjem musí osoba zahrnout do  svého daňového přiznání na konci
+    roku v  rámci ročního zúčtování daně,  slouží tato sestava jako potvrzení o příjmech.<br>
+    </font></li>
+  <li><font face="Arial">Vytvořena  nová  nabídka   "Tisk  převodních  příkazů".  Pro
+    vytváření příkazů  k úhradě jsou  vybrány doklady ze  zvoleného období, u nichž má druh pohybu v číselníku druhy pohybu uvedenu
+    podmínku  "P".  Ze  seznamu  dokladů  s  částkami  k výplatě se klávesou  Insert (případně  F8)  vyberou  ty, které  je potřeba
+    zahrnout do převodního příkazu. Hromadně lze vybrat nebo zrušit označení  položek  klávesou  Shift  F8.  Před  spuštěním  tisku
+    převodního příkazu se musí k označeným položkám vybrat účty, ze kterých  bude  provedena  platba  klávesou  F2.  Zadání účtů se
+    provádí v  nabídce Číselníky - Bankovní  účty - Peněžní ústavy.
+    Doplnění účtů  jednotlivých osob se zadává  v nabídce Číselníky - Bankovní účty  - Bankovní spojení. Při  prvotním naplnění lze
+    do tohoto  číselníku převzít seznam  osob z matričního  souboru klávesou F10 a doplnit pouze čísla bankovních účtů.</font></li>
+</ul>
+<hr>
+<p><font face="Arial"><span style="mso-fareast-font-family: MS Mincho"><b>Verze </b></span><b>2.04</b> -
+</font><font face="Arial">distribuce 14.08.1997<br>
+</font></p>
+<ul>
+  <li><font face="Arial">Upraveny formuláře pro převody u  druhů pohybu 41 až 45 tak,
+    aby  se  na  nich  zobrazovalo  jméno  a rodné číslo nabyvatele převodu<br>
+    </font></li>
+  <li><font face="Arial">Při výdeji vypořádacího podílu bylo možno zadávat vypořádací
+    hodnotu pouze  do výše původního  vkladu. Pokud byl  vypořádací podíl větší než vklad, nešlo tuto hodnotu vydat. Opraveno.&nbsp;<br>
+    </font></li>
+  <li><font face="Arial">Doplněna sestava "Podílový list - souhrnný přehled" do které
+    se vypisují zůstatky položek jednotlivých podílových listů.<br>
+    </font></li>
+  <li><font face="Arial">V prohlížení podílových listů doplněn tisk klávesou F6.<br>
+    </font></li>
+  <li><font face="Arial">Doplněna nabídka  Servis - obnova -  počáteční stavy. Slouží
+    pro případné  znovuvytvoření matričních souborů.  Postup obnovy je následující:<br>
+  a)  převezme se  matriční soubor  po minulém  měsíci, doplní se k němu podílové listy, které byly nově založeny<br>
+  b)  do  takto  připravených   matričních  souborů  se  postupně promítají doklady, které byly ve zvoleném období pořízeny.<br>
+    </font></li>
+  <li><font face="Arial">Je vytvářen soubor se zprávami o provozu programu MP.LOG, do
+    kterého   se   zaznamenávají   nejdůležitější   akce  prováděné v programu.   Prohlížet    soubor   MP.LOG   lze    v   nabídce
+    "Servis-speciální akce-provoz programu".<br>
+    </font></li>
+  <li><font face="Arial">Při  pořízení  a  opravách  změnových  dokladů  lze zobrazit
+    aktuální  stav  (před  promítnutím  změn  z dokladu) podílového listu, na kterém je doklad pořízen.<br>
+    </font></li>
+  <li><font face="Arial">Při  zapnutém přepínači  editace počátečních  stavů a jejich
+    opravě docházelo k poškození  popisných údajů podílového listu. Odstraněno.<br>
+    </font></li>
+  <li><font face="Arial">Doplněna nová sestava - "Deník podle druhu pohybu", ve které
+    jsou součty dokladů za jednotlivé druhy pohybu.<br>
+    </font></li>
+  <li><font face="Arial">Přístup  do  programu  lze  chránit  heslem.  Zadání seznamu
+    uživatelů  programu  s  jejich  přístupovými  hesly  lze  zadat spuštěním  programu  UFAND.EXE.  V  nabídce  vyberete Instalace
+    úlohy .  Po dotazu "vyberte  soubor" vyhledáte program  MP.RDB.<br>
+  V nabídce  Uživatelé  lze  upravovat  seznam  uživatelů. Seznam uživatelů  je  text  obsahující  seznam  oprávněných  uživatelů
+    úlohy.  Každý  uživatel  má   přiřazeno  jméno  (text  uzavřený v apostrofech), kód uživatele (číslo od  1 do 255), heslo (text
+    uzavřený v apostrofech) a seznam přístupových práv.<br>
+<br>
+  Jméno,Kód,Heslo,(SeznamPřístupovýchPráv); ... jedna položka seznamu
+<br>
+    </font>
+    <table border="1" width="610">
+      <tr>
+        <td width="60"><font face="Arial">Jméno&nbsp;</font></td>
+        <td width="534"><font face="Arial">&nbsp;jméno aktuálního uživatele
+          pro identifikaci v projektu</font></td>
+      </tr>
+      <tr>
+        <td width="60"><font face="Arial">Kód&nbsp;</font></td>
+        <td width="534"><font face="Arial">&nbsp;číslo aktuálního uživatele
+          pro identifikaci v projektu<br>
+          &nbsp;vypisuje se do provozního deníku programu MP.LOG</font></td>
+      </tr>
+      <tr>
+        <td width="60"><font face="Arial">Heslo&nbsp;</font></td>
+        <td width="534"><font face="Arial">&nbsp;tímto heslem se uživatel přihlašuje
+          při startu úlohy</font></td>
+      </tr>
+      <tr>
+        <td width="60"><font face="Arial">Seznam</font></td>
+        <td width="534"><font face="Arial">&nbsp;seznam čísel (1..255) pro
+          rozlišení přístupových práv v projektu - není využito.</font></td>
+      </tr>
+    </table>
+    <p><font face="Arial">
+  př.<br>
+  'Jiří Novák', 1, 'JN'<br>
+  'Karel X',    2, '26525'<br>
+<br>
+     Pokud  budete  využívat  ochranu  programu před neoprávněným uživatelem, musíte  seznam uživatelů a  hesel před přeinstalací
+    programu uložit do textového souboru  a po instalaci nové verze programu  z  tohoto  souboru  seznam  znovu  načíst  do nabídky
+    Instalace  úlohy -  Uživatelé. Zápis  do textového  souboru lze provést v  nabídce Uživatelé příkazem pro  zápis bloku &lt;Ctrl K>
+    + &lt;Ctrl W>.<br>
+  Program  se dotáže  na jméno  souboru, do  kterého se má zapsat seznam.   Po   zadání   jména   souboru   a   potvrzení  můžete
+    přeinstalovat novou verzi programu.<br>
+  Po  přeinstalaci   je  seznam  uživatelů   prázdný.  V  nabídce uživatelé  do něj  můžete načíst  obsah souboru,  který jste si
+    předtím vytvořili stiskem kláves &lt;Ctrl K> + &lt;CtrlR&gt;.<br>
+    </font></li>
+  <li><font face="Arial">Při prohlížení změnových dokladů  lze klávesou &lt;F2> vytvořit
+    a   prohlížet soubor  zaúčtování pouze z dokladu,  na kterém je nastaven  kurzor. Při  prohlížení souboru  zaúčtování lze měnit
+    zobrazení klávesou &lt;Tab> a &lt;Shift Tab>.<br>
+    </font></li>
+  <li><font face="Arial">Doplněna sestava  "Zaúčtování - Navazující  účetní případy".<br>
+  Vypisují se  do ní ze  souboru zaúčtování pouze  ty věty, které mají v  položce A (automatický  přenos do spojovacího  souboru)
+    nastaveno "Ne". Sestava slouží  jako podklad pro další účtování nebo kontrolu navazujících účetních  dokladů, které navazují na
+    zaúčtování ve spojovacím souboru.  Spuštěním nabídky se vytvoří sestava setříděná  podle rodného čísla  a v ní  jsou vypisovány
+    všechny  věty  pro  doúčtování.  Po  opuštění  této  sestavy je vytvářen sumář za druhy pohybu.<br>
+    </font></li>
+  <li><font face="Arial">Rozšířena nabídka  nastavení období, která  umožňuje vybírat
+    ze  seznamu období.  Tento seznam  se vytvoří  podle dostupných matričních souborů MP0M001 v adresáři MAT.<br>
+    </font></li>
+  <li><font face="Arial">Nabídka rekonstrukce doplněna o reindexaci číselníků.<br>
+    </font></li>
+  <li><font face="Arial">Doplněna provozní dokumentace, která je  v adresáří DOK.  Na
+    začátku souboru jsou uvedeny  tečkové příkazy, které se uplatní při tisku prostřednictvím FANDU. Můžete je upravit, či vymazat.&nbsp;<br>
+    </font>
+    <table border="1" width="355">
+      <tr>
+        <td width="107"><font face="Arial">
+  .pl (pagelimit)&nbsp;</font></td>
+        <td width="232"><font face="Arial">&nbsp; počet řádků na stránce</font></td>
+      </tr>
+      <tr>
+        <td width="107"><font face="Arial">
+  .he (header)&nbsp;</font></td>
+        <td width="232"><font face="Arial">&nbsp; hlavička na každé straně</font></td>
+      </tr>
+      <tr>
+        <td width="107"><font face="Arial">
+  .fo (foot)&nbsp;</font></td>
+        <td width="232"><font face="Arial">&nbsp; poslední řádka na každé straně</font></td>
+      </tr>
+    </table>
+  </li>
+</ul>
+<hr>
+<p><font face="Arial"><span style="mso-fareast-font-family: MS Mincho"><b>Verze </b></span><b>2.03</b> -
+</font><font face="Arial"> 30.05.1997 - nedistribuováno</font></p>
+<hr>
+<p><font face="Arial"><span style="mso-fareast-font-family: MS Mincho"><b>Verze </b></span><b>2.02</b> -
+</font><font face="Arial">distribuce 21.04.1997<br>
+</font></p>
+<ul>
+  <li><font face="Arial">Nešlo pořízení více dokladů s typem  pohybu 4 a 5 (DP 20,22)
+    pro změnu skupiny osob v jednom účetním období - opraveno.<br>
+    </font></li>
+  <li><font face="Arial">Při pořízení dokladů pro  převod majetku se nabízely hodnoty
+    celkem místo zůstatků. Opraveno.<br>
+    </font></li>
+  <li><font face="Arial">Při  pořízeni  DP  22   -  ukončení  členství  nešlo  změnit
+    v dokladu   výši  přiznaného   vypořádacího  podílu   (opraveno v číselníku druhy  pohybu). Pokud se při  opravě tohoto dokladu
+    změnila  částka vypořádacího  podílu, program  již nepřepočítal rozdíl  mezi  VP  a  vkladem.  Tím  se  tento údaj proúčtovával
+    v chybné výši.<br>
+    </font></li>
+  <li><font face="Arial">Upraven číselník "Povolené převody" o možnost převodu z kódu
+    nabytí 01 na 01.</font></li>
+</ul>
+<hr>
+<p><font face="Arial"><span style="mso-fareast-font-family: MS Mincho"><b>Verze </b></span><b>2.01</b> -
+</font><font face="Arial">distribuce 02.01.1997<br>
+</font></p>
+<ul>
+  <li><font face="Arial">Doplněn  import   matričního  souboru  z   programu  "Vklady
+    a závazky"  od  organizační  kanceláře  Praha  verze  2.05 (bez záruky).<br>
+    </font></li>
+  <li><font face="Arial">Nelze  opravovat a  rušit doklady  z jiných  období, než  je
+  aktuální měsíc.<br>
+    </font></li>
+  <li><font face="Arial">Rozšířen účtový předpis o podmínku zaúčtování pro kód nabytí
+    majetku v intervalu od .. do.<br>
+    </font></li>
+  <li><font face="Arial">Opravena  chybná   aktualizace  karet  při   rušení  dokladu
+    s převodem (párového pohybu).<br>
+    </font></li>
+  <li><font face="Arial">Opraven  import dat  z  verze  1.05 (program  nehavaruje při
+    zpracování změnového  dokladu pro který  není vytvořen podílový list). Rodné  číslo osoby je  v průběhu importu  oznámeno. Tyto
+    doklady lze  odstranit pouze tak,  že se pro  ně založí sumární karta a podílový  list s kódem nabytí 01  a pořadovým číslem 01
+    a následně se zruší (F8).</font></li>
+</ul>
+<hr>
+
+<p><b><font face="Arial" size="4">Popis změn</font></b><font face="Arial">&nbsp;&nbsp;
+<u><a href="verze.htm">2014-2019</a></u><b><font size="5">&nbsp;&nbsp; </font></b>
+<a href="verze2008-2013.htm"><u>2008-2013</u></a><b><font size="5">&nbsp;&nbsp; </font></b>
+<u><a href="verze1999-2007.htm">1999-2007</a></u>&nbsp;&nbsp;
+<u><b>1995-1998</b></u></font></p>
+
+</body>
+
+</html>

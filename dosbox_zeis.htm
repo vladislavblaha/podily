@@ -1,0 +1,757 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Tipy</title>
+<base target="_self">
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:17.85pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+span.rvts8
+	{mso-style-parent:"";
+	font-weight:bold}
+h2
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Cambria","serif";
+	color:#CC0000;
+	}
+p.MsoToc2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-indent:17.85pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold}
+span.MsoHyperlink
+	{mso-style-parent:"";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single}
+p.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:11.0pt;
+	margin-bottom:.0001pt;
+	text-indent:17.85pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+p.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	tab-stops:right 453.1pt;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+h3
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	}
+h4
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	}
+-->
+</style>
+</head>
+
+<body bgcolor="#B7C8C4">
+
+<p class="MsoNormal" align="center" style="text-align:center">
+<a name="_Toc372968367"><span class="rvts8">
+<span style="font-size: 20.0pt; line-height: 115%">Nastavení programu DOSBox pro 
+spouštění programů ZEIS</span></span></a></p>
+<h2><a name="_Toc372968368">Obsah</a></h2>
+<p class="MsoToc2"><font face="Arial">Instalační program ke stažení&nbsp;zde ...&nbsp;
+<b><a href="DOSBox.exe">
+<img border="0" src="img/disketa.gif" width="16" height="16"></a>&nbsp;</b></font></p>
+<p class="MsoToc2"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109332">
+<font size="3">Instalace</font><span style="color: windowtext; display: none; text-decoration: none"><font size="3">&nbsp;</font></span></a></span></p>
+<p class="MsoToc3"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109333">
+<font size="3">Parametry spuštění</font><span style="color: windowtext; display: none; text-decoration: none"><font size="3">
+</font> 
+</span></a></span></p>
+<p class="MsoToc3"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109334">
+<font size="3">Úprava konfiguračních souborů</font><span style="color: windowtext; display: none; text-decoration: none"><font size="3">&nbsp;</font></span></a></span></p>
+<p class="MsoToc3"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109335">
+<font size="3">Sekce a přepínače</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109336">
+<font size="3">[SDL]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109337">
+<font size="3">[dosbox]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109338">
+<font size="3">[render]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109339">
+<font size="3">[cpu]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109340">
+<font size="3">[mixer]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109341">
+<font size="3">[midi]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109342">
+<font size="3">[sblaster]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109343">
+<font size="3">[gus]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109344">
+<font size="3">[speaker]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109345">
+<font size="3">[joystick]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109346">
+<font size="3">[serial]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109347">
+<font size="3">[dos]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109348">
+<font size="3">[ipx]</font></a></span></p>
+<p class="MsoToc4"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109349">
+<font size="3">[autoexec]</font></a></span></p>
+<p class="MsoToc2"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109350">
+<font size="3">Odlišnosti nastavení pro jednotlivé programy, omezení funkčnosti</font></a></span></p>
+<p class="MsoToc3"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109352">
+<font size="3">Majetek</font></a></span></p>
+<p class="MsoToc3"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109353">
+<font size="3">Zvířata</font></a></span></p>
+<p class="MsoToc3"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109354">
+<font size="3">Zásoby</font></a></span></p>
+<p class="MsoToc3"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109355">
+<font size="3">Půda</font></a></span></p>
+<p class="MsoToc3"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109356">
+<font size="3">Mzdy 97</font></a></span></p>
+<p class="MsoToc2"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109357">
+<font size="3">Rekapitulace omezení funkčnosti programů ZEIS</font></a></span></p>
+<p class="MsoToc3"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109358">
+<font size="3">Import licencí z&nbsp;internetu – LICENCE.exe</font><span style="color: windowtext; display: none; text-decoration: none"><font size="3">&nbsp;</font></span></a></span></p>
+<p class="MsoToc3"><span class="MsoHyperlink">
+<a style="color: blue; text-decoration: underline; text-underline: single" href="#_Toc376109359">
+<font size="3">Tisk – AMBON a DOSPrinter</font></a></span></p>
+<p class="MsoNormal">&nbsp;</p>
+<h2><a name="_Toc372968369">Úvod</a></h2>
+<p class="MsoNormal"><font size="3">Program DOSBox slouží pro spuštění 16-ti bitových programů 
+v&nbsp;prostředí 64 bitových operačních systémů, které přímo již podporu těchto 
+starších programů nepodporují.</font></p>
+<p class="MsoNormal"><font size="3">DOSBox pracuje jako emulátor operačního systému MS-DOS 
+s&nbsp;omezených množstvím použitelných příkazů. Výkon DOSBoxu je závislý na výkonu 
+hostitelského stroje. Lze dosáhnout přibližného výkonu srovnatelného s&nbsp;počítači 
+s&nbsp;procesorem Intel 486 až Pentium.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<h2><a name="_Toc376109332">Instalace</a></h2>
+<p class="MsoNormal"><font size="3">Instalátor programu nabídne jako výchozí cílový adresář pro 
+umístění programu DOSBox složku C:\DOSBOX.&nbsp; Můžete zvolit libovolný disk nebo 
+složku, nebo ji po instalaci přejmenovat, protože instalace nic nezapisuje do 
+registrů Windows.</font></p>
+<p class="MsoNormal"><font size="3">Ve složce s&nbsp;nainstalovaným programem jsou připraveni 
+zástupci pro spuštění programů</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style="text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><font size="3">Majetek (EM.lnk)</font></p>
+<p class="MsoNormal" style="text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><font size="3">Půda (Puda.lnk)</font></p>
+<p class="MsoNormal" style="text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><font size="3">Mzdy97(Mzdy97.lnk)</font></p>
+<p class="MsoNormal" style="text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><font size="3">Zásoby (Za.lnk)</font></p>
+<p class="MsoNormal" style="text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><font size="3">Zvířata (Zv.lnk)</font></p>
+<p class="MsoNormal" style="margin-left:53.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Ve vlastnostech 
+těchto zástupců je upraven příkazový řádek tak, že je v&nbsp;něm doplněno několik 
+parametrů.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<h3><a name="_Toc376109333">Parametry spuštění</a></h3>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Příklad 
+nastavení cíle v&nbsp;zástupci pro spuštění Majetku</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">C:\DOSBox\DOSBox.exe -conf C:\DosBox\EM.conf -noconsole</font></b></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Parametr &nbsp;&lt;<b>- 
+conf&gt;</b> </font> </p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">umožňuje zadat 
+cestu ke konfiguračnímu souboru protředí DOSBoxu, který bude použit při 
+spuštění. Konfigurační soubor umožňuje upravit nastavení práce s&nbsp;grafickou 
+kartou, myší, procesorem, zvukovou kartou a podobně. Nejdůležitější částí 
+konfiguračního souboru je sekce <b>[Autoexec]</b>, ve které se zpravidla uvedou 
+příkazy na připojení pevných disků a uvede se jméno spouštěného programu.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Z&nbsp;tohoto důvodu 
+je pro spuštění každého programu připraven samostatný konfigurační soubor.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Parametr&nbsp; &lt;<b>- 
+noconsole&gt;</b> </font> </p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">umožňuje 
+vypnout okno s&nbsp;konzolí pro hlášení operačního systému DOSBoxu. Nemusí být 
+uveden, ale další okno navíc je spíš obtěžující. V&nbsp;případě havárie programu lze 
+hlášení DOSBoxu nalézt uložené v&nbsp;souboru </font> <b><font size="3">stdout.txt.</font></b></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">&nbsp;</font></b></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Tyto vzorové 
+zástupce programů můžete umístit na plochu.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<h3><a name="_Toc376109334">Úprava konfiguračních souborů</a></h3>
+<p class="MsoNormal"><font size="3">Konfigurační soubory mají poměrně přehlednou strukturu.&nbsp; 
+Konfigurační soubor je rozdělen do sekcí, které jsou označeny názvem sekce 
+v&nbsp;hranatých závorkách. Př. </font> <strong>
+<span style="font-family: Calibri,sans-serif"><font size="3">[SDL]</font></span></strong></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">V&nbsp;rámci sekce 
+jsou použity klíčové výrazy (přepínače), u kterých je uvedeno nastavení.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Řádek 
+začínající znakem &lt;#&gt; je považován za komentář.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<h3><a name="_Toc376109335">Sekce a přepínače</a></h3>
+<h4><a name="_Toc376109336"><strong><span style="font-family: Cambria,serif">
+[SDL]</span></strong></a></h4>
+<p class="MsoNormal"><b><font size="3">fullscreen</font></b><font size="3"> - nastaví zda má být DOSBox spuštěn v 
+celoobrazovkovém režimu <i>(true,false). </i>V&nbsp;konfiguračních souborech je 
+nastaven provoz v&nbsp;okně. Přepnutí do celoobrazovkového režimu a zpět se provádí 
+klávesou Alt_Enter.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">fulldouble</font></b><font size="3"> 
+- nastaví dvojnásobnou vyrovnávací paměť v celoobrazovkovém režimu. </font> </p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">fullresolution</font></b><font size="3"> - nastaví rozlišení v celoobrazovkovém režimu. Při volbě <i>
+original</i> bude použito rozlišení, jaké používá aktuálně operační systém, 
+jinak lze zadat svoji hodnotu, například 640x480, 800x600 nebo 1024x768. 
+Přepínač zřejmě nemusíte upravovat, protože předpokládám, že aplikace budete 
+spouštět v&nbsp;okně. I v&nbsp;celoobrazovkovém režimu bude systém pracovat zřejmě 
+v&nbsp;jediném rozlišení.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">windowresolution</font></b><font size="3"> – pokud DOSBox poběží v okně, opět můžete fixně nastavit 
+rozlišení pro tento režim (viz výše), nebo volbou <i>original</i> použít 
+rozlišení operačního systému. Pokud se při nastavení <i>original </i>vytváří 
+příliš malé okno, je nutno nastavit konkrétní rozměr, který je pak respektován.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Rozměr okna 
+musí být vždy menší, než je nastavení rozlišení ve windows. Takže pokud pracují 
+windows v&nbsp;rozlišení 1280x1024, nelze do parametru windowresolution zadat takto 
+velký rozměr okna, protože se prostě na obrazovku nevejde. Plocha windows bez 
+systémové lišty má menší rozměr. Pokud zvolíte příliš velký roměr okna, který se 
+nevejde na pracovní plochu Windows, po spuštění aplikace je okno DOSBoxu černé. 
+V&nbsp;tom případě je nutno upravit parametr windowresolution na menší rozměr okna.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><strong>
+<span style="font-family: Calibri,sans-serif"><font size="3">output</font></span></strong><font size="3"> - určuje 
+jaké grafické rozhraní se má použít pro DOSBox</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">autolock</font></b><font size="3"> 
+- při nastavení <i>true</i> je kurzor myši po kliknutí automaticky dostupný jen 
+v DOSBoxu a aplikacích v něm spuštěných, do OS se standardně opět dostane 
+stiskem kombinace kláves CTRL+F10. Při použití <i>false</i> můžete prostým 
+tažením myší plynule přecházet mezi OS a DOSBoxem. V&nbsp;distribuci je mapování 
+klávesy Ctrl_F10 vypnuto, takže <b><span style="color:red">je nutné ponechat 
+nastavení&nbsp; <i>false</i></span></b>.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">priority</font></b><font size="3"> 
+- nastaví prioritu procesoru, která má být přidělena DOSBoxu - od nejnižší <i>
+lowest</i> až po nejvyšší <i>highest</i>. Zde se nastavují dvě hodnoty oddělené 
+čárkou. První udává přidělený výkon procesoru DOSBoxu, když je používán (okno je 
+aktivní). Hodnota za čárkou značí, kolik se mu má přidělit, pokud je 
+minimalizován v&nbsp;liště. V&nbsp;souborech je nastaveno <i>highest,</i>tedy nejvyšší 
+priorita procesu, protože běh DOSBoxu je již tak líný<i>. </i>Pokud by zdržovalo 
+ostatní aplikace, nutno snížit prioritu.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">mapperfile</font></b><font size="3"> 
+- cesta k souboru, ve kterém je definováno rozložení znaků klávesnice a případně 
+akce, které se stiskem klávesy provedou. Bez definice souboru pro mapování 
+kláves je použito interní nastavení DOSBoxu, které má přiřazeny následující 
+klávesy k&nbsp;provedení určených akcí:</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">ALT-ENTER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switch to full screen and back.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">ALT-PAUSE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pause emulation (hit ALT-PAUSE again to continue).</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-F1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start the keymapper.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-F4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Change between mounted floppy/CD images. Update directory 
+cache for all drives.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-ALT-F5&nbsp;&nbsp;&nbsp;&nbsp; Start/Stop creating a movie of the screen. (avi video capturing)</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-F5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Save a screenshot. (PNG format)</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-F6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start/Stop recording sound output to a wave file.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-ALT-F7&nbsp;&nbsp;&nbsp;&nbsp; Start/Stop recording of OPL commands. (DRO format)</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-ALT-F8&nbsp;&nbsp;&nbsp;&nbsp; Start/Stop the recording of raw MIDI commands.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-F7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Decrease frameskip.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-F8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Increase frameskip.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-F9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kill DOSBox.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-F10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capture/Release the mouse.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-F11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Slow down emulation (Decrease DOSBox Cycles).</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">CTRL-F12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Speed up emulation (Increase DOSBox Cycles)*.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">ALT-F12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unlock speed (turbo button/fast forward)**.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">F11, 
+ALT-F11&nbsp; &nbsp; (machine=cga) change tint in NTSC output modes***</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">F11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(machine=hercules) cycle through amber, green, white 
+colouring***</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">Protože tyto 
+kombinace funkčních kláves potřebují využívat emulované programy, bylo nutno 
+mapování kláves upravit. Byl vytvořen soubor mapperMP.map, který tyto funkční 
+klávesy uvolňuje. Přepínač mapperfile je tedy nezbytně nutný. V&nbsp;souborech je 
+nastaven takto:</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<span style="color:red"><font size="3">mapperfile=mapperMP.map</font></span></b></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<h4><a name="_Toc376109337">[dosbox]</a></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">machine</font></b><font size="3"> 
+- třída grafické karty. Standardně lze použít <b>svga_s3</b>. Některé grafické 
+karty nedokáží tento typ grafické karty emulovat. Obraz dosboxu má pak podobu 
+sypaného čaje. V&nbsp;takovémto případě vyzkoušejte </font> <b><font size="3">machine=ega</font></b></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">captures</font></b><font size="3"> 
+- určuje složku kam se budou ukládat obrázky a videa. Nebudete využívat.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">memsize</font></b><font size="3"> 
+- nastaví počet požadadované paměti uvnitř DOSBoxu. Bohatě postačí 16 MB</font></p>
+<h4><a name="_Toc376109338">[render]</a></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">frameskip</font></b><font size="3"> 
+- souvisí s výkonem DOSBoxu, hodnota udává počet přeskočených obrazovek, před 
+vykreslením další. Na pomalejších strojích může zvýšit výkon, ale obraz bude 
+trhaný. Doporučuji nechat na '0'.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">aspect</font></b><font size="3"> 
+- toto se týká typu monitoru. Pokud máte monitor s poměrem stran šířka : výška = 
+4:3, ponechte <i>true</i>, pokud máte širokoúhlý monitor, použijte <i>false</i>. 
+</font> </p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">scaler</font></b><font size="3"> 
+- pomocí tohoto parametru můžete vylepšit výsledný obraz např. vyhlazením 
+ostrých hran a kostiček. </font> </p>
+<h4><a name="_Toc376109339">[cpu]</a></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">core</font></b><font size="3"> 
+– určuje, které jádro procesoru bude využito. Nastavuji na <b><i>auto</i></b>. 
+Při nastavení <i>dynamic </i>některé programy &nbsp;občas havarovaly.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">cputype
+</font>
+</b><font size="3">– typ emulovaného procesoru. Nastavuji na <b> <i>auto</i></b>.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">cycles</font></b><font size="3"> 
+- množství instrukcí za milisekundu, kolik má DOSBox emulovat. Nastavuji na
+<span style="color:red; font-weight:700; font-style:italic">max</span>. I tak je emulace dost pomalá.</font></p>
+<h4><a name="_Toc376109340">[mixer]</a></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">nosound</font></b><font size="3"> 
+- tato volba vypne zvuky. Nastaveno na <i>true</i>. Co nemusí běžet, ať je 
+vypnuto. Pokud si potrpíte na ozvučení, nastavte na <i>false</i>.</font></p>
+<h4><a name="_Toc376109341">[midi]</a></h4>
+<h4><a name="_Toc376109342">[sblaster]</a></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">Emulace 
+zvukové karty Sound Blaster. </font> </p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<h4><a name="_Toc376109343">[gus]</a></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">gus</font></b><font size="3"> - 
+Zapne / Vypne emulaci zvukové karty Gravis Ultrasound. Co nemusí běžet, ať 
+neběží. Nastaveno na </font> <i><font size="3">false.</font></i></p>
+<h4><a name="_Toc376109344">[speaker]</a></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">pcspeaker</font></b><font size="3"> 
+- Zapne / Vypne emulaci PC speakeru. Co nemusí běžet, ať neběží. Nastaveno na 
+</font> <i>
+<font size="3">false.</font></i></p>
+<h4><a name="_Toc376109345">[joystick]</a></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">joysticktype</font></b><font size="3"> - Zapne / Vypne emulaci joysticku. Co nemusí běžet, ať neběží. 
+Nastaveno na </font> <i><font size="3">none.</font></i></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<h4><a name="_Toc376109346">[serial]</a></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">Zde můžete 
+nastavit až 4 emulované sériové COM porty. Co nemusí běžet, ať neběží. Nastaveno 
+na </font> <i><font size="3">disabled.</font></i></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<h4><a name="_Toc376109347">[dos]</a></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">Nastavení 
+pamětí XMS, EMS, UMB a rozvržení klávesnice. Některé programy vyžadují dostatek 
+konvenční paměti, pak je potřeba mít zapnutou XMS a UMB. Majetek a Mzdy97 
+využívají EMS, je nutno mít zapnuto také.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">xms</font></b><font size="3"> - 
+nechte </font> <i><font size="3">true</font></i></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">ems</font></b><font size="3"> - 
+nechte </font> <i><font size="3">true</font></i></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">umb</font></b><font size="3"> - 
+nechte </font> <i><font size="3">true</font></i></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">keyboardlayout</font></b><font size="3"> - kód rozvržení klávesnice.</font></p>
+<h4><font face="Calibri,sans-serif"><a name="_Toc376109348">[ipx]</a></font></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<font size="3">ipx</font></b><span style="font-size: 12.0pt; line-height: 115%; "> 
+- ponechte <i>false.</i></span><font size="3"> Co nemusí běžet, ať neběží. Nastaveno na 
+</font> <i>
+<font size="3">false.</font></i></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">&nbsp;</p>
+<h4><font face="Calibri,sans-serif"><a name="_Toc376109349">[autoexec]</a></font></h4>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+Tato sekce popisuje seznam příkazů, které se mají provést po spouštění DOSBoxu.
+</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+V první řadě je nutno připojit pevné disky, se kterými bude potřeba pracovat. 
+Toto se provádí příkazem </span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+&nbsp;</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<span style="font-size: 12.0pt; line-height: 115%; ">
+MOUNT &quot;Písmeno pro logickou jednotku:„ &quot;Cesta k&nbsp;zařízení nebo adresáři&quot;</span></b></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<span style="font-size: 12.0pt; line-height: 115%; ">
+&nbsp;</span></b></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+Příklad připojení disku C: do kořenového adresáře:</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; font-weight:700">
+mount c: c:/</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+Poznámka: &nbsp;&nbsp;&nbsp; Zpětné lomítko (</span><span lang="EN-US" style="font-size: 12.0pt; line-height: 115%; ">\</span><span style="font-size: 12.0pt; line-height: 115%; ">) 
+lze nahrazovat běžným lomítkem(/).</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nelze vytvářet logický disk Z:, protože pod tímto písmenem 
+si DOSBox při startu vytváří virtuální disk v&nbsp;paměti.</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+Pokud si tímto způsobem chcete připojit flash disk např. pro zálohování, musel by 
+být připojen při spuštění DOSBoxu. Pozdější zastrčení do USB portu již není 
+detekováno. Z&nbsp;tohoto důvodu doporučuji směrovat zálohování na síťový disk, který 
+zpravidla při spuštění DOSBoxu bude přístupný.</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+Př. MOUNT X: //vzdálený počítač/jméno sdílené složky/</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+&nbsp;</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+Ve výchozím nastavení DOSBoxu je implicitně nastavena česká klávesnice. Protože 
+většina programů má nastavenu vlastní podporu české klávesnice, je nutno českou 
+klávesnici vypnout. <br>
+Toto se prování příkazem <b>KEYB US.</b></span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+<br>
+Pro zrychlení odezvy klávesnice doporučuji spouštět následující příkaz:</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<span style="font-size: 12.0pt; line-height: 115%; ">
+c:\dosbox\mode con delay=1 rate=32</span></b></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+Program MODE.COM není standardně součástí DOSBoxu, najdete jej v&nbsp;adresáři, kam 
+byl DOSBox instalován.</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">Ve výchozím stavu je v DOSBoxu po spuštění vypnuta numerická 
+klávesnice.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">Zapnutí lze provést příkazem</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<b>
+<span style="font-size: 12.0pt; line-height: 115%; ">
+c:\dosbox\</span></b><font size="3"><span style="font-weight: 700">numlock.exe</span></font><span style="font-size: 12.0pt; line-height: 115%; "><br>
+Program numlock.exe není standardně součástí DOSBoxu, najdete jej v&nbsp;adresáři, kam 
+byl DOSBox instalován.</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">Tisk z DOSBoxu lze řešit přesměrováním výstupu na LPT do souboru 
+a tento soubor pak tisknout prostřednictvím programu WINPRINT.EXE.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">Přesměrování portu lze provést příkazem Prn2file &lt;jméno souboru&gt; 
+&lt;číslo portu&gt;</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<font size="3">Program Prn2file.com je instalován do adresáře DOSBox.</font></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<b>
+<span style="font-size: 12.0pt; line-height: 115%; ">
+c:\dosbox\</span><font size="3">Prn2file.com report.prn 1</font></b></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+&nbsp;</p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+Pro nastavení počtu řádků a sloupců na obrazovce lze použít příkaz</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<span style="font-size: 12.0pt; line-height: 115%; ">
+c:\dosbox\132x43.com </span></b></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+nebo</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt"><b>
+<span style="font-size: 12.0pt; line-height: 115%; ">
+c:\dosbox\setlines</span></b><span style="font-size: 12.0pt; line-height: 115%; "><b>.com 
+34</b><br>
+Předpokladem pro použití víceřádkového zobrazení je dostatečně velké rozlišení 
+monitoru a strpění ne příliš pohledného fontu jednotlivých znaků. DOSBox i při 
+víceřádkovém zobrazení přepočítá font podle základního rozlišení 80x25 a tudíž 
+je písmo zploštělé.</span></p>
+<p class="MsoNormal" style="text-indent: 0cm; margin-left: 17.85pt">
+<span style="font-size: 12.0pt; line-height: 115%; ">
+&nbsp;&nbsp;</span></p>
+<h2><font face="Calibri,sans-serif"><a name="_Toc376109350">Odlišnosti nastavení pro jednotlivé programy, 
+omezení funkčnosti</a></font></h2>
+<h3><a name="_Toc376109352">Majetek</a></h3>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program je 
+spouštěn s&nbsp;využitím konfiguračního souboru EM.conf.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Dále je 
+zablokováno vypnutí české klávesnice, protože program Majetek přebírá systémovou 
+klávesnici.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program 
+podporuje režim zobrazení 80x50. Pokud oželíte kvalitu fontu znaků, můžete 
+použít příkaz mode co80,50.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">Omezení 
+funkčnosti</font></b></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program Majetek 
+využívá služeb externě volaných 32 bitových programů. Tyto programy nelze v 
+prostředí DOSBox spustit, protože vnitřně běží v&nbsp;16-ti bitovém režimu. 
+</font> </p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Z&nbsp;tohoto důvodu 
+nejsou v&nbsp;programu Majetek funkční:</font></p>
+<p class="MsoNormal" align="left" style="text-align: left; text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><font size="3">Tisky sestav prostřednictvím&nbsp; EWINPR.EXE<br>
+Řešení: přesměrovat výstup na LPT do souboru a tisknout pomocí programu WinPrint</font></p>
+<p class="MsoNormal" align="left" style="text-align: left; text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><font size="3">Licence – import z&nbsp;internetu<br>
+Řešení: stahovat licence dávkovým příkazem prostřednictvím programu LICENCE.EXE</font></p>
+<p class="MsoNormal" align="left" style="text-align: left; text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><font size="3">Kontrola nových verzí na internetu</font></p>
+<p class="MsoNormal" align="left" style="margin-left:53.85pt;text-align:left;
+text-indent:0cm">&nbsp;</p>
+<h3><a name="_Toc376109353">Zvířata</a></h3>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program je 
+spouštěn s&nbsp;využitím konfiguračního souboru ZV.conf.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Obsluha české 
+klávesnice je interně v&nbsp;programu podle nastavení GLOBAL.ZCF. Pokud v&nbsp;průběhu 
+práce potřebuje českou klávesnici vypnout, funguje klávesa Ctrl_F1 pro přepnutí 
+mezi CS a US klávesnicí.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program pracuje 
+pouze v&nbsp;režimu 80x25.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">Omezení 
+funkčnosti</font></b></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program Zvířata 
+využívá pouze služeb programu LICENCE.EXE. </font> </p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Z&nbsp;tohoto důvodu 
+není v&nbsp;programu funkční:</font></p>
+<p class="MsoNormal" align="left" style="text-align: left; text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><font size="3">Tisky sestav přímo na LPT<br>
+Řešení: nastavit tisk a tisknout přes AMBON</font></p>
+<p class="MsoNormal" align="left" style="text-align: left; text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><font size="3">Licence – import z&nbsp;internetu<br>
+Řešení: stahovat licence dávkovým příkazem prostřednictvím programu LICENCE.EXE</font></p>
+<p class="MsoNormal" align="left" style="margin-left:53.85pt;text-align:left;
+text-indent:0cm">&nbsp;</p>
+<h3><a name="_Toc376109354">Zásoby</a></h3>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program je 
+spouštěn s&nbsp;využitím konfiguračního souboru ZA.conf.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Obsluha české 
+klávesnice je interně v&nbsp;programu podle nastavení GLOBAL.ZCF. Pokud v&nbsp;průběhu 
+práce potřebuje českou klávesnici vypnout, funguje klávesa Ctrl_F1 pro přepnutí 
+mezi CS a US klávesnicí.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program pracuje 
+pouze v&nbsp;režimu 80x25.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">Omezení 
+funkčnosti</font></b></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">V&nbsp;programu není 
+funkční:</font></p>
+<p class="MsoNormal" align="left" style="text-align: left; text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><font size="3">Tisky sestav přímo na LPT<br>
+Řešení: nastavit tisk a tisknout přes AMBON. Drobné omezení je v&nbsp;chybě při 
+vytváření souboru pro Ambon, kdy není prováděno odstránkování.</font></p>
+<p class="MsoNormal" align="left" style="text-align: left; text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><font size="3">Licence – import z&nbsp;internetu<br>
+Řešení: stahovat licence dávkovým příkazem prostřednictvím programu LICENCE.EXE</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<h3><a name="_Toc376109355">Půda</a></h3>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program je 
+spouštěn s&nbsp;využitím konfiguračního souboru Puda.conf.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Sekce 
+[Autoexec] je doplněna o test, zda již není program Půda spuštěn. Test využívá 
+toho, že po spuštění UFANDu je vytvářen pracovní soubor FANDWORK.&nbsp; Pokud soubor 
+existuje, dojde k&nbsp;pokusu o jeho smazání. Pakliže je otevřen již běžícím 
+DOSBoxem, je uzamčen a smazání není úspěšné. V&nbsp;takovémto případě je oznámeno, že 
+program již je jednou spuštěn a zpracování je ukončeno.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program může 
+pracovat v režimu 80x50. Pokud oželíte kvalitu fontu znaků, můžete použít příkaz 
+mode co80,50.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><b>
+<font size="3">Omezení 
+funkčnosti</font></b></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program Půda 
+využívá služeb externě volaných 32 bitových programů. Tyto programy nelze v 
+prostředí DOSBox spustit, protože vnitřně běží v&nbsp;16-ti bitovém režimu. 
+</font> </p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Z&nbsp;tohoto důvodu 
+nejsou v&nbsp;programu Půda funkční:</font></p>
+<p class="MsoNormal" align="left" style="text-align: left; text-indent: -18.0pt; margin-left: 53.85pt">
+<span style="font-family: Symbol"><font size="3">·</font><span style="font-style:normal; font-variant:normal; font-weight:normal; font-size:12pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><font size="3">Tisky sestav &lt;F6&gt; přes tiskárnu Windows nefunkční, je volána 32 
+bitová aplikace</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<h3><a name="_Toc376109356">Mzdy 97</a></h3>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program je 
+spouštěn s&nbsp;využitím konfiguračního souboru Mzdy97.conf.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Spuštění 
+programu by mohlo být např. využito pro dotisk chybějících mzdových listů. Tisky 
+lze provádět prostřednictví programu Ambon.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<h2><a name="_Toc376109357">Rekapitulace omezení funkčnosti programů ZEIS</a></h2>
+<h3><a name="_Toc376109358">Import licencí z&nbsp;internetu – LICENCE.exe</a></h3>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Tuto akci lze 
+nahradit tak, že uživateli připravíte na ploše zástupce dávkového příkazu, 
+kterým budou licence stáhnuty prostřednictvím programu LICENCE.EXE.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">V&nbsp;adresáři 
+DOSBOX je připraven dávkový soubor LIC.CMD se vzorovým stažením včech licencí a 
+nakopírováním do adresářů jednotlivých programů. Ve vzorovém souboru je třeba 
+změnit IČ 12345678 na skutečné a opravit cesty k&nbsp;programům, kde jsou ve 
+skutečnosti nainstalovány.</font></p>
+<h3><a name="_Toc376109359">Tisk – AMBON a DOSPrinter</a></h3>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">U programu 
+Majetkové podíly, Zásoby, Zvířata, Mzdy97 lze tisk řešit prostřednictvím 
+programu Ambon.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">U programů 
+Majetek a Půda je prozatím dostupný pouze tisk na LPT. Jako nouzové řešení lze 
+použít přesměrování výstupu na port LPT1 do souboru a ten následně zpracovat 
+programem DOSPrinter.exe. Upozorňuji, že tento program je sice bez licence 
+funkční, nejedná se však o freeware. Naleznete jej v&nbsp;adresáři DOSBox.
+</font> </p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Pokud chcete 
+tento způsob tisku pro Majetek a Půdu použít, je potřeba např. program Majetek 
+spouštět pomocí dávkového souboru Majetek.bat. V&nbsp;něm je nejprve provedeno 
+spuštění DosPrinteru se sledováním souboru <b>c:\dosbox\report.prn</b>, pak 
+vlastní spuštění DosBoxu a po jeho ukončení i uvolnění programu DosPrinter 
+z&nbsp;paměti.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">V&nbsp;konfiguračním 
+souboru Em.conf je pak v&nbsp;sekci [Autoexec] doplněn příkaz c:\dosbox\Prn2file.com 
+c:\dosbox\report.prn, což způsobí přesměrování výstupu na LPT1 do souboru </font> <b>
+<font size="3">c:\dosbox\report.prn.</font></b></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Upozornění:</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Po spuštění 
+tisku klávesou &lt;F9&gt; musíte počkat, až proběhne celý výstup do souboru 
+report.prn.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">V&nbsp;průběhu tisku 
+se zobrazí dialogové okno programu DosPrinter. Počkáte, až program Majetek 
+dokončí tisk. Pak můžete vybrat ze seznamu dostupných tiskáren a zvolit 
+orientaci papíru (Portrait - na výšku, Landscape – na šírku). Při tisku na šířku 
+papíru nezapomeňte zkontrolovat nastavení přepínače 801 (počet řádků sestavy na 
+šířku). Doporučuji maximálně 50 řádků.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">Program Půda je 
+při tomto způsobu tisku nutno spouštět dávkovým souborem Puda.bat.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm"><font size="3">V&nbsp;programu je 
+nutno změnit nastavení výchozí tiskárny na <b>&lt;EPS-LAT LPT1&gt;</b> buď před tiskem 
+klávesou &lt;Alt_F6&gt;. Trvalé nastavení této tiskárny jako výchozí docílíte 
+programem fandinst.exe v&nbsp;nabídce tiskárny. Najedete na tuto tiskárnu a klávesou 
+Ctrl šipka vlevo ji posunete až nahoru.</font></p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:17.85pt;text-indent:0cm">&nbsp;</p>
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Tipy</title>
+<base target="_self">
+</head>
+
+<body bgcolor="#B7C8C4">
+
+<p><b><font face="Arial" size="4">Tipy pro práci s programem</font></b></p>
+
+<ol>
+  <li><font face="Arial"><a href="#Uvolnění konvenční paměti pod Windows XP">Uvolnění
+    konvenční paměti pod Windows XP a Vista</a></font></li>
+	<li><font face="Arial">
+	<a href="#Postup importu poukázek B do podání online na www.cpost.cz">Postup 
+	importu poukázek B do podání online na www.cpost.cz </a></font></li>
+</ol>
+<ul>
+  <li><font face="Arial"><b><a name="Uvolnění konvenční paměti pod Windows XP">Uvolnění
+    konvenční paměti pod Windows XP</a></b>.<br>
+    <br>
+    &nbsp;Programy vytvořené v prostředí PC FAND pracují pouze v základní
+    části operační paměti (v dolních 640 KB). Vzhledem k rozsahu programu
+    majetkové podíly je nutno mít při spuštění programu k dispozici cca
+    580 KB volné konvenční paměti pro bezproblémovou funkčnost. Pokud je k
+    dispozici méně paměti, dojde při práci v rozsáhlejší pasáži
+    programu (např. vytvoření sestavy podle formulářů) k ukončení
+    programu s chybovým hlášením &quot;Nestačí paměť&quot;.<br>
+    <br>
+	Při spuštění programu MS-DOS pod WinXP je standardně
+    k dispozici asi 608 KB volné paměti. Na některých počítačích z neznámých
+    příčin dá systém k dispozici cca 550&nbsp;KB volné paměti. Příčinou je
+    umístění programu DOSX (53 KB) pro podporu DPMI programů do konvenční
+    paměti a nikoliv do horní paměti. Spuštění této podpory je řízeno
+    souborem AUTOEXEC.NT příkazem LH %SystemRoot%\system32\dosx.<br>
+    <br>
+    Uvolnění paměti lze provést ve 3 krocích:<br>
+    <br>
+    1. V distribuci je použit místo UFAND.EXE program UFANDB.EXE (Fand bez
+    podpory grafů), který má menší paměťové nároky o cca 8 KB. Pokud se
+    rozhodnete pro instalaci tohoto programu, změňte si v dávkovém souboru
+    MP.BAT příkaz pro spuštění na UFAND\UFANDB.EXE MP.RDB<br>
+    <br>
+    2. Můžete snížit vymezení pracovní oblasti fandu v paměti doplněním
+    příkazu SET FANDOVRB=80. Zadaná hodnota udává počet KB paměti. Pokud
+    příkaz není zadán, je implicitně vyhrazeno 124 KB. Povolené hodnoty
+    jsou 80 až 134. Použití tohoto příkazu teoreticky sníží rychlost
+    programu.<br>
+    <br>
+    př. souboru MP.BAT<br>
+    @echo off<br>
+    mode con lines=43<br>
+    kb16 us<br>
+    set fandovrb=80<br>
+    ufand\ufandb.exe mp.rdb<br>
+    <br>
+    3. Dále můžete vyřadit správu horní paměti pro podporu DPMI programů,
+    protože FAND s ní nepracuje. Protože je nutné brát ohled na jiné DOS
+    programy, které s horní pamětí pracují (MZDY97, MAJETEK), nelze
+    vyřadit spuštění DOSX v souboru AUTOEXEC.NT v adresáři
+    WINDOWS\SYSTEM32. Pro tento účel je v adresáři UFAND vzorový soubor
+    FandAuto.NT. Použití tohoto nastavení prostředí pro spuštění
+    majetkových podílů uděláte tak, že k programu UFANDB.EXE vyvoláte
+    systémovou nabídku (klávesou ShiftF10 nebo pravým tlačítkem myši např.
+    v průzkumníkovi nebo v Total Commanderu). Vyberete &quot;Vlastnosti&quot;.
+    Vlezete na záložku &quot;Program&quot;. Zvolte tlačítko &quot;Upřesnit&quot;.
+    Do názvu souboru Autoexec zadejte absolutní cestu k náhradnímu souboru,
+    tedy &quot;<a href="file:///C:/MP/UFAND/FANDAUTO.NT">C:\MP\UFAND\FANDAUTO.NT</a>&quot;. 
+	Do pole příkazový řádek přepište cestu k dávkovému souboru MP.BAT (např. C<span lang="en-us">:\MP\MP.BAT</span>).&nbsp; 
+	Vyplňte pracovní adresář (např. C:<span lang="en-us">\MP</span>). Tímto se 
+	vytvoří soubor UFANDB.PIF. Tento můžete přejmenovat na MP.PIF. Na ploše 
+	vytvoříte zástupce tohoto souboru. Po spuštění tohoto zástupce v okně můžete 
+	upravit velikost písma z nabídky Vlastnosti v levém horním rohu. Po 
+	potvrzení tlačítkem OK zvolit &quot;Uložit vlastnosti pro další okna se stejným 
+	názvem&quot;.<br>
+	Vzorový soubor MP.PIF stáhněte&nbsp; zde ...&nbsp;
+<b><a href="MP.PIF"><img src="img/disketa.gif" border="0" width="16" height="16"></a></b><br>
+	.</font></li>
+	<li><font face="Arial">
+	<b>
+	<a name="Postup importu poukázek B do podání online na www.cpost.cz">Postup importu poukázek B do podání online na www.cpost.cz</a></b> </font><br>
+	<font face="Arial"><br>
+	Import do internetové aplikace Podání online provedete:</font><ul>
+		<li><font face="Arial">otevřít 
+		<a target="_blank" href="http://www.cpost.cz">http://www.cpost.cz</a></font></li>
+		<li><font face="Arial">přihlásit do klientské zóny</font></li>
+		<li><font face="Arial">vybrat &lt;Podání online - Vstup do podání online&gt;</font></li>
+		<li><font face="Arial">vybrat záložku &lt;Poukázky B&gt;</font></li>
+		<li><font face="Arial">vybrat sekci &lt;Import dat&gt;</font></li>
+		<li><font face="Arial">vybrat &lt;Konfigurace&gt; a nastavit parametry importu a 
+	pořadí údajů v CSV souboru takto:<br>- Typ souboru CSV<br>- Kódová stránka 852<br>- 
+		Služby standardní s oddělovačem &quot;+&quot;&nbsp; <br>
+		- pořadí importovaných polí nastavit následovně</font><table border="1" width="20%">
+			<tr>
+				<td bgcolor="#6699FF"><b>Název údaje</b></td>
+				<td width="77" bgcolor="#6699FF" align="center"><b>Pořadí</b></td>
+			</tr>
+			<tr>
+				<td><font face="Arial">Příjmení/Název </font></td>
+				<td width="77" align="center"><font face="Arial">1</font></td>
+			</tr>
+			<tr>
+				<td><font face="Arial">Jméno</font></td>
+				<td width="77" align="center"><font face="Arial">2</font></td>
+			</tr>
+			<tr>
+				<td><font face="Arial">Obec</font></td>
+				<td width="77" align="center"><font face="Arial">3</font></td>
+			</tr>
+			<tr>
+				<td><font face="Arial">Část obce</font></td>
+				<td width="77" align="center"><font face="Arial">4</font></td>
+			</tr>
+			<tr>
+				<td><font face="Arial">Ulice</font></td>
+				<td width="77" align="center"><font face="Arial">5</font></td>
+			</tr>
+			<tr>
+				<td><font face="Arial">Číslo popisné</font></td>
+				<td width="77" align="center"><font face="Arial">6</font></td>
+			</tr>
+			<tr>
+				<td><font face="Arial">Číslo orientační</font></td>
+				<td width="77" align="center">7</td>
+			</tr>
+			<tr>
+				<td><font face="Arial">PSČ</font></td>
+				<td width="77" align="center"><font face="Arial">8</font></td>
+			</tr>
+			<tr>
+				<td><font face="Arial">Částka</font></td>
+				<td width="77" align="center"><font face="Arial">9</font></td>
+			</tr>
+			<tr>
+				<td><font face="Arial">Zpráva pro adresáta</font></td>
+				<td width="77" align="center"><font face="Arial">10</font></td>
+			</tr>
+		</table></li>
+		<li><font face="Arial">provedené změny uložit tlačítkem <b>&lt;Uložit&gt;</b></font></li>
+		<li><font face="Arial">vrátit se do nabídky importu tlačítkem <b>&lt;Zpět&gt;</b><br>
+		<br>
+		<img border="0" src="img/tipy.h1.gif" width="685" height="631"><br>
+&nbsp;</font></li>
+		<li><font face="Arial">tlačítkem <b>&lt;Procházet ...&gt;</b> najít soubor 
+		SlozB.CSV</font></li>
+		<li><font face="Arial">spustit import dat ve tlačítkem <b>&lt;Import CSV&gt;</b><br>
+		<br>
+		<img border="0" src="img/tipy.h2.gif"><br>
+&nbsp;</font></li>
+		<li><font face="Arial">v dalším okně je nutno zvolit nový soubor podání 
+		nebo kliknout na již vytvořené podání, kam bude import přidán</font></li>
+		<li><font face="Arial">import probíhá pomalu, takže je vhodné používat 
+		tlačítko <b>&lt;Aktualizovat&gt;</b> a sledovat ve výpisu, kolik záznamů je 
+		již zpracováno</font></li>
+		<li><font face="Arial">musíte počkat, dokud se v seznamu nevypíše 
+		hlášení, že import je ukončen.<br>
+&nbsp; </font></li>
+	</ul></li>
+</ul>
+
+</body>
+
+</html>

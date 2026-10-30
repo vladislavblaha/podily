@@ -1,0 +1,375 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Tipy</title>
+<base target="_self">
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:17.85pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+span.rvts8
+	{mso-style-parent:"";
+	font-weight:bold}
+h2
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Cambria","serif";
+	color:#CC0000;
+	}
+p.MsoToc2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-indent:17.85pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold}
+span.MsoHyperlink
+	{mso-style-parent:"";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single}
+p.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:11.0pt;
+	margin-bottom:.0001pt;
+	text-indent:17.85pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+p.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	tab-stops:right 453.1pt;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+h3
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	}
+h4
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	}
+-->
+</style>
+</head>
+
+<body bgcolor="#B7C8C4">
+
+<p class="MsoNormal" align="center" style="text-align:center">
+<a name="_Toc372968367"><span class="rvts8">
+<span style="font-size: 20.0pt; line-height: 115%">Nastavení programu vDos pro 
+spouštění programů ZEIS</span></span></a></p>
+<p class="MsoToc2"><font face="Arial">Instalační balíček ZIP ke stažení&nbsp;zde ...&nbsp;
+<b><a href="vDos.zip">
+<img border="0" src="img/disketa.gif" width="16" height="16"></a>&nbsp;</b></font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Tento popis by měl sloužit pro rychlé seznámení 
+s&nbsp;virtuálním prostředím vDos. Cílem je podělit se o první zkušenosti 
+s&nbsp;nastavením a provozováním.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Program vDos vychází z&nbsp;programu DosBox. Program DosBox byl 
+vyvinut a určen primárně ke spouštění her v&nbsp;grafickém prostředí. Za tímto účelem 
+bylo umožněno nastavovat emulaci různých typů grafických karet.&nbsp; Naproti tomu si 
+program vDos bere za cíl provoz dosových programů v&nbsp;textovém režimu s&nbsp;možností 
+maximálního využití plochy a rozlišení obrazovky. Z&nbsp;tohoto důvodu nějaké 
+nastavení grafiky v&nbsp;prostředí vDos nehledejte, zřejmě ani nenajdete. Kdo si chce 
+za každou cenu spustit legendární T602, jedině v&nbsp;DosBoxu.</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">Toto prostředí neřeší ani nastavení typu procesoru a 
+omezení výkonu. Prostě jede na 100 % dosažitelného výkonu. Ani toto nastavení 
+nehledejte.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Mezi další rozšíření, které běžný uživatel v&nbsp;podstatě 
+neregistruje, je možnost práce s&nbsp;dlouhými jmény souborů. </font> </p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Prostředí vDos bylo rozšířeno o některé vlastnosti a je 
+k&nbsp;dispozici pod názvem vDosPlus. Odlišnosti mezi těmito verzemi budou zmíněny 
+dále.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<h3>Instalace</h3>
+<p class="MsoNormal"><font face="Arial" size="3">Program není třeba instalovat. Stačí rozbalit. Vzhledem 
+k&nbsp;tomu, že má cca 1 MB, dávám si ho do složky vDos ke každému programu, který 
+bude jeho prostřednictvím spouštěn. Tedy např. ve složce C:\Zeis\ZV vytvořím 
+složku vDos a do ní rozbalím program vDos a konfigurační soubory. V distribučním 
+balíčku jsou zabaleny obě verze programu (vDos i vDosPlus)</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Z&nbsp;programu vDos.exe vytvořím zástupce programu na ploše. 
+Zástupce přejmenuji na jméno programu, který chci spouštět. Ve vlastnostech 
+zástupce změním ikonu podle provozovaného programu. Dále pokračuji nastavením 
+prostředí v&nbsp;Dosu editací konfiguračních souborů.</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">&nbsp;&nbsp; </font> </p>
+<h3>Nastavení prostředí</h3>
+<p class="MsoNormal"><font face="Arial" size="3">Program pro nastavení prostředí využívá souborů CONFIG.TXT 
+a AUTOEXEC.TXT. Pokud si vytvoříte zástupce programu, jsou tyto konfigurační 
+soubory hledány v adresáři &lt;Spustit v:&gt;, který je na záložce „Zástupce“. Pokud 
+tam nejsou nalezeny, použije tyto soubory z adresáře, ze kterého je vDos 
+spuštěn.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<h4>Připojení zařízení</h4>
+<p class="MsoNormal"><font face="Arial" size="3">Ve výchozím stavu po spuštění zná vDos pouze obsah 
+adresáře, ve kterém je spuštěn. Pro zpřístupnění místních disků, síťových disků 
+a externích disků je nutno použít příkaz <b>USE &lt;písmeno:&gt; &lt;cesta&gt;</b> umístěný 
+do souboru AUTOEXEC.TXT. Cestou může být </font> </p>
+<p class="MsoNormal"><font face="Arial" size="3">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+celý disk (USE C: C:\) </font> </p>
+<p class="MsoNormal"><font face="Arial" size="3">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+adresář (USE C: C:\ZEIS\) </font></p>
+<p class="MsoNormal"><font face="Arial" size="3">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+adresář na jiném počítači (USE X:
+<a href="file://SERVER/SPOJOVAK/">
+\\SERVER\SPOJOVAK\</a>).</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">V&nbsp;programu vDosPlus lze použít příkaz<b> USEDRVS = ON
+</b>umístěný do souboru CONFIG.TXT a při každém spuštění se automaticky připojí 
+všechny disky v počítači. </font> </p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Je třeba si uvědomit, že namapování disků probíhá pouze při 
+spuštění vDosu. Pokud tedy k&nbsp;počítači připojíte externí disk za běhu virtuálního 
+stroje, toto již není detekováno a zařízení je uvnitř stroje neviditelné. Je 
+třeba instruovat obsluhu, že zálohovací flashka se musí zasunout před spuštěním 
+programu.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Program vDos i vDosPlus jsou freeware a open source. Autoři 
+programu ovšem zřejmě ve snaze podpořit projekt i finančně omezují práci se 
+síťovými disky vyskakovacím oknem s&nbsp;informací o programu.&nbsp; Snaží se tím přimět 
+uživatele k&nbsp;registraci produktu, která je 35 EUR/uživatele. Vyskakovací okno se 
+objevuje při prvním pokusu o práci se síťovým prostředkem a v pak mně neznámých 
+časových intervalech. Z&nbsp;tohoto důvodu je potřeba zvážit, zda je nutné např. 
+zálohovat na síťový disk, ukládat spojovací soubory na síťový disk apod. Pokud 
+se bez tohoto neobejdete, je třeba obsluze vysvětlit, že je nutno do 
+vyskakovacího okna klepnout myší a jede se dál. Funkčnost tímto není omezena.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Připojení disků provádím tak, že se je snažím zpřístupnit 
+pod stejným označením, jako jsou viditelné ve Windows. Tedy USE c: c:\, 
+USE d: d:\ atd. Nepřehazuji tedy písmena a 
+struktura adresářů je shodná jak ve Windows tak uvnitř vDosu. Ušetříte tím 
+pátrání sobě i jiným odkud se vlastně berou data.&nbsp; </font> </p>
+<p class="MsoNormal">&nbsp;</p>
+<h4>Paměť</h4>
+<p class="MsoNormal"><font face="Arial" size="3">Prostředí vDos poskytuje standardně 633 KB volné paměti, 
+což je o trochu víc než je k&nbsp;dispozici v&nbsp;příkazovém řádku Windows. Pokud někdo 
+touží po větší konvenční paměti, lze do souboru CONFIG.TXT zadat parametr XMEM = 
++4 XMS. Tímto parametrem s&nbsp;použitím znaménka &lt;+&gt; je zpřístupněna další rozšířená 
+paměť o zadaném množství MByte a kupodivu se zvětší i odstupná konvenční paměť 
+na 697 KB. Může se hodit při použití pro spuštění programu, který má větší 
+paměťové nároky na konvenční paměť.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">K&nbsp;nastavení horní paměti lze v&nbsp;programu vDosPlus použít 
+příkaz LOW = OFF. Tímto se vypne přístup k&nbsp;UMB paměti, do které se nahrává část 
+systému (známé DOS=HIGH). Tím by se snížila využitelná konvenční paměť na cca 
+580 KB, což je pro provoz některých programů nedostatečné. Takže příkaz LOW 
+zásadně nepoužívat.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<h4>Myš</h4>
+<p class="MsoNormal"><font face="Arial" size="3">Možnost použití myši uvnitř prostředí vDos lze zapnout 
+příkazem <b>MOUSE = ON</b> v&nbsp;konfiguračním souboru. Protože ve všech spouštěných 
+programech lze nabídky ovládat i myší, doporučuji zapnout. Implicitně je 
+vypnuto.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<h4>Obrazovka</h4>
+<p class="MsoNormal"><font face="Arial" size="3">vDos zobrazuje textový režim prostřednictvím truetypových 
+písem Windows. K&nbsp;volbě použitého typu písma slouží příkaz FONT = &lt;cesta 
+k&nbsp;souboru TTF&gt;. Pokud příkaz není zadán, má prostředí vDos svůj výchozí font. 
+Osobně jej nepoužívám, protože se mi písmo zdá poněkud nitkovité. Lze zadat 
+cestu k&nbsp;souboru a název souboru s&nbsp;fontem. Lze využívat fonty přímo z&nbsp;Windows, 
+které jsou umístěny v&nbsp;adresáři Windows\Fonts. Fontů 
+písem najdete na internetu nepřeberně, ovšem málo které obsahuje české písmo. 
+Nakonec jsem skončil u klasického fontu CONSOLA. Kdo má rád tučnější písmo, může 
+zkusit CONSOLAB. Příkaz pro volbu fontu používám tento:<br>
+<b>FONTS = C:\WINDOWS\FONTS\CONSOLA&nbsp; &nbsp;</b></font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Rozměr okna se ovlivňuje příkazem WINDOW = &lt;Procento 
+zaplnění plochy obrazovky&gt;. Při zadání příkazu WINDOW = 100 prostředí nabíhá 
+v&nbsp;celoobrazovkovém režimu. Někomu se to může líbit. Přepínání mezi 
+celoobrazovkovým a okenním režimem se tradičně provádí kombinací kláves &lt;Alt+Enter&gt;. 
+Snažím se o maximální využití plochy obrazovky v&nbsp;okenním režimu, takže zadávám 
+hodnotu v&nbsp;procentech na 99.</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">Umístění okna se v&nbsp;příkazu WINDOW určí zadáním souřadnice 
+X:Y levého horního rohu okna v&nbsp;pixelech za údajem procento zaplnění obrazovky. 
+Pokud chci mít okno zarovnané v&nbsp;levém horním rohu obrazovky, zadám příkaz<b>
+WINDOW = 99,1:1</b>. Pokud ho chci mít víc vpravo, pak&nbsp; WINDOW = 99,800:1.
+</font> </p>
+<p class="MsoNormal"><font face="Arial" size="3">Bez zadání souřadnic pro umístění okna je okno centrováno. 
+Centrování je prováděno v&nbsp;horizontálním i vertikálním směru. Při volbě většího 
+počtu řádků se může stát, že se spodní část okna dostává do oblasti systémové 
+lišty Windows, protože je počítáno v&nbsp;celoobrazovkovém režimu. Doporučuji 
+souřadnice využívat, protože se zpravidla vyhnete překrývání spodní části okna 
+systémovou lištou Windows.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Nastavení počtu zobrazených řádků a sloupců se provádí 
+příkazy <b>LINS = počet řádků </b>a <b>COLS = počet sloupců</b>. Maximální 
+rozsah je omezen na 60 řádků x 240 sloupců. Tak velký počet sloupců ale určitě 
+nevyužijete. Bez uvedení těchto parametrů program nabíhá v&nbsp;klasickém rozlišení 
+25 x 80. </font> </p>
+<p class="MsoNormal"><font face="Arial" size="3">Nastavení počtu řádků a sloupců má samozřejmě smysl pouze 
+tehdy, pokud větší počet podporuje i program, který je spouštěn. Při testování 
+jsem narazil na následující omezení. </font> </p>
+<p class="MsoNormal">
+<font face="Arial" size="3">1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Programy 
+spouštěné v&nbsp;prostředí PC Fandu nelze spustit s&nbsp;větším počtem sloupců než 132. 
+Při nastavení většího počtu hned při spuštění zmrzne.<br>
+Program <b>Majetkové podíly</b> lze provozovat pouze v&nbsp;prostředí vDosPlus, 
+protože využívá rozšíření o další příkazy oproti prostředí vDos. Instalaci 
+vDosPlus provádějte z&nbsp;webových stránek MP.</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Program <b>Půda</b> umí pracovat pouze v&nbsp;80-ti sloupcovém režimu. Při 
+větším počtu jsou okna rozházená. Počet řádků lze nastavit libovolně.</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">3)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Program <b>Majetek</b> bez problémů pracuje v&nbsp;80-ti sloupcovém režimu. 
+Lze tedy nastavit LINS=52, COLS=80. Při nastavení většího počtu sloupců na 
+většině dat nejde pořízení změnových dokladů. Zřejmě dochází ke konfliktu 
+v&nbsp;rozšířené paměti. Program pak hlásí nedostatek paměti pro provedení akce. 
+Testováno bylo na datech řady podniků. U některých program pracuje i v&nbsp;režimu 50 
+x 160. Na většině ale nejde pořízení. Doporučuji vyzkoušet pořízení v rozlišení 
+nad 80 sloupců. Pokud bude fungovat, snad půjde i provozovat. Pokud nejde, 
+použít <b>LINS=52 a COLS=80.</b></font></p>
+<p class="MsoNormal"><font face="Arial" size="3">4)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Program <b>Zvířata</b> - pracuje ve větším rozlišení bez problémů. Efekt 
+většího využití plochy obrazovky je citelný, protože jsou přehlednější práce 
+v&nbsp;nabídkách se seznamy dokladů. Většina sestav je širších než 80 sloupců, takže 
+i práce při prohlížení sestav je komfortnější. Doporučuji využít režim např. 52 
+x 130. Kdo má rád větší písmo tak 40 x 130 a podobně.</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">5)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Program <b>Zásoby</b> – pracuje pouze v&nbsp;režimu 80 x 25. Pro větší 
+rozlišení není optimalizován. Při změně období nebo přepínačů havaruje zápis do 
+konfiguračního souboru. </font> </p>
+<p class="MsoNormal"><font face="Arial" size="3">6)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Program <b>MZDY97</b> můžete mít potřebu spustit např. pro případ dotisknutí 
+starých mzdových listů. Má smysl nastavit pouze LINS = 30 COLS = 80. Jiný režim 
+program nepodporuje.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">V&nbsp;prostředí vDosPlus lze použít příkaz TITLE = &lt;Jméno 
+běžícího programu&gt;. V&nbsp;systémové liště je pak místo všeobecného popisu ikony vDos 
+jméno běžícího programu.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Ve výchozím nastavení nabíhá po spuštění okno vDos bez 
+orámování. Považujme to za výhodu, protože se tím ušetří řádek okna. Zapnutí 
+orámování lze provést příkazem FRAME = ON. Doporučuji tento příkaz nepoužívat, 
+protože obsluha pak má viditelně k&nbsp;dispozici v&nbsp;pravém horním rohu „křížek“ pro 
+ukončení programu, což samozřejmě vede k&nbsp;násilnému ukončení běhu programu 
+spuštěného uvnitř vDosu. To samozřejmě může v&nbsp;okamžiku zápisu dat do souborů 
+vést k&nbsp;narušení konzistence dat nebo poškození souboru.</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">Při práci bez orámování v&nbsp;prostředí vDos se po najetí myší 
+do pravého horního rohu okna zobrazí ikona pro minimalizaci programu. Ikona pro 
+maximalizaci a uzavření okna chybí. Pokud by běžící program zamrznul, ukončení 
+běhu lze provést pouze prostřednictvím správce úloh Windows. V&nbsp;prostředí 
+vDosPlus se po najetí myší do pravého horního roku zobrazí klasické 3 ikony pro 
+minimalizaci, maximalizaci a ukončení programu. Pokud obsluha vybere křížek pro 
+ukončení programu, je alespoň vydáno varování (bohužel anglicky), že to není 
+bezpečné, protože je otevřen jeden nebo více souborů. Prostě se to zachová jako 
+pod Windows XP a starších verzích. Odstřelení zamrzlého programu lze tedy 
+provést tímto způsobem.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">Praktické je použití zmenšování nebo zvětšování velikosti 
+písma (a tudíž i okna) klávesami &lt;window + F11&gt; a &lt;window + F12&gt; v&nbsp;programu 
+vDos. V&nbsp;programu vDosPlus to lze provádět i myší tak jak je zvykem v&nbsp;jiných 
+programech tedy &lt;Ctrl + kolečko vpřed&gt; a &lt;Ctrl + kolečko vzad&gt;.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<h4>Klávesnice</h4>
+<p class="MsoNormal"><font face="Arial" size="3">Klávesnice je přebírána z&nbsp;prostředí Windows. U programů 
+v&nbsp;prostředí PC Fand je klávesnice řešena vnitřně a nelze mít současně zapnutou 
+českou klávesnici ve Windows a českou klávesnici ve&nbsp;Fandu. Docházelo by 
+k&nbsp;dvojímu překódování klávesy. Problémem prostředí vDos je nemožnost přepnutí 
+kódování na US klávesnici. Prostě není k&nbsp;dispozici příkaz KEYB US nebo KB16 US. 
+Kromě chybného kódování českých znaků je dalším problémem desetinná tečka na 
+numerické klávesnici. Ta je pouze na US klávesnici, na české klávesnici je 
+desetinná čárka. Pořízení desetinných čísel a datumů jak ve Fandu, tak v&nbsp;dalších 
+programech pracuje pouze s&nbsp;desetinnou tečkou. </font> </p>
+<p class="MsoNormal"><font face="Arial" size="3">Toto omezení se mi nepodařilo vyřešit. Obsluha programu 
+prostě musí po spuštění systémovou klávesnici Windows přepnout na US klávesnici 
+(nejlépe levý Alt+Shift). K&nbsp;dispozici jsou sice programy na přemapování kláves, 
+ve kterých lze místo desetinné čárky generovat kód desetinné tečky, ale tato 
+změna je trvalá a znefunkční pořízení čísel v&nbsp;Excelu a jiných programech, kde je 
+vyžadována desetinná čárka. Už vůbec nedoporučuji úpravu národního prostředí ve 
+Windows, kde lze nastavit desetinný oddělovač.</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">Prostě se obsluha bude muset naučit po spuštění vDosu 
+přepnout na US klávesnici.</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">&nbsp;&nbsp;&nbsp;</font></p>
+<h4>Tisk</h4>
+<p class="MsoNormal"><font face="Arial" size="3">Prostředí vDos odchytává tisk do portu LPT1 až LPT4 a 
+přesměrovává na libovolnou tiskárnu nainstalovanou ve Windows. Výběr tiskárny je 
+přes dialogové okno před každým tiskem. Lze tisknout i na PDF tiskárnu. </font> </p>
+<p class="MsoNormal"><font face="Arial" size="3">Tisk z&nbsp;programu musí být řízen prostřednictvím escape 
+sekvencí (řídících kódů pro tiskárnu). Pokud byste ve stavu nouze chtěli 
+tisknout tímto starým klasickým způsobem, můžete použít jak tisk prostřednictvím 
+řídících kódů standardu EPSON tak řídících kódů jazyka PCL. V&nbsp;tom případě 
+doporučuji použít jazyk PCL, písmo je hezčí. Tento způsob tisku připadá v&nbsp;úvahu 
+je teoreticky, protože z&nbsp;programu Majetek budete určitě tisknout prostřednictvím 
+EWinWiew, z&nbsp;programu Zvířata, Zásoby, MZDY97 nebo Majetkové podíly 
+prostřednictvím programu AMBON.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<h3>Vzorový příklad konfigurace</h3>
+<p class="MsoNormal"><b><font face="Arial" size="3">AUTOEXEC.TXT</font></b></p>
+<p class="MsoNormal"><font face="Arial" size="3">rem Připojení disků</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">USE c: c:\</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">rem Spuštění programu</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">c:</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">cd \zeis\em</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">majetek.exe /VDOS /IC:\</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">exit</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b><font face="Arial" size="3">CONFIG.TXT</font></b></p>
+<p class="MsoNormal"><font face="Arial" size="3">rem Zapnutí myši</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">MOUSE = ON</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">rem Připojení všech diskůve 
+vDosPlus.
+</font> </p>
+<p class="MsoNormal"><font face="Arial" size="3">rem V&nbsp;tom případě nemá příkaz USE v&nbsp;Autoexec.txt smysl</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">USEDRVS = ON</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">rem Výběr fontu písma</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">FONT = C:\WINDOWS\FONTS\CONSOLA</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">rem Nastavení velikosti plochy okna a umístění</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">WINDOW = 99,1:1</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial" size="3">rem Nastavení počtu řádků a sloupců</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">LINS = 52</font></p>
+<p class="MsoNormal"><font face="Arial" size="3">COLS = 80</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+
+</body>
+
+</html>
